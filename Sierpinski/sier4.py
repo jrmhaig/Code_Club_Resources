@@ -1,4 +1,5 @@
 from turtle import *
+from math import sqrt
 
 # Draw several dots towards the line
 #
