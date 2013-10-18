@@ -4,3 +4,6 @@ in Python using the turtle module. I did this with a year 6
 syllabus and so all the comments assume that level of knowledge.
 
 The code is not written to be given out but rather as a guide for the teacher.
+
+I managed to get through everything except part 5 (choosing random corners) in
+a little over an hour.
