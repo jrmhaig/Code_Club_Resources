@@ -1,5 +1,5 @@
 from turtle import *
-# from math import sqrt       # Only needed for Python 3
+from math import sqrt
 from random import randrange
 
 # Choose a random start position

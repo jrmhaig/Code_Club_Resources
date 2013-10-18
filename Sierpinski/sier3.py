@@ -1,11 +1,9 @@
 from turtle import *
-# Required for Python 3 but not 2
-# from math import sqrt
+from math import sqrt
 
 # Draw towards a point
 # New commands:
-#   sqrt(number) (Python 2)
-#   math.sqrt(number) (Python 3)
+#   math.sqrt(number)
 #
 # New syntax:
 #   Mathematical operations ** and /
