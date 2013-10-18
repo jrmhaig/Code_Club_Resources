@@ -2,7 +2,7 @@ from turtle import *
 # Required for Python 3 but not 2
 # from math import sqrt
 
-# Draw dowards a point
+# Draw towards a point
 # New commands:
 #   sqrt(number) (Python 2)
 #   math.sqrt(number) (Python 3)
