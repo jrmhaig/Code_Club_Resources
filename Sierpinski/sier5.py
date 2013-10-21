@@ -1,5 +1,4 @@
 from turtle import *
-from math import sqrt
 from random import randrange
 
 # Choose a random start position
@@ -19,16 +18,12 @@ for i in range(10):
 
     setheading(angle)
 
-    x, y = position()
-    print("Current x = " + str(x))
-    print("Current y = " + str(y))
+    dist = distance(point[0], point[1])
 
-    distance = sqrt( (point[0] - x)**2 + (point[1] -y)**2 )
-
-    print("Distance from turtle to point: " + str(distance))
+    print("Distance from turtle to point: " + str(dist))
 
     print("Drawing line of half that distance ...")
 
-    forward(distance/2)
+    forward(dist/2)
 
     dot(5)
