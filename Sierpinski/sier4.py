@@ -1,28 +1,35 @@
 from turtle import *
+from random import randrange
 
-# Draw several dots towards the line
-#
-# New command:
-#   dot(size)
+# Draw Sierpinski's gasket!
+
+# Note, comment (or remove) print statements or it will be slow
+
+def randpoint():
+    return [ randrange(401)-200, randrange(401)-200 ]
 
 penup()
+speed(11)
 
-point = [ 100, 100 ]
+corners = [ randpoint(), randpoint(), randpoint() ]
 
-for i in range(10):
+for i in range(1000):
+    n = randrange(3)
+    point = corners[n]
+    
     angle = towards(point[0], point[1])
-    print("Angle to point is " + str(angle) + " degrees")
+    #print("Angle to point is " + str(angle) + " degrees")
 
-    print("Turning towards that point ...")
+    #print("Turning towards that point ...")
 
     setheading(angle)
 
-    dist = distance(point[0], point[1])
+    dist = distance( point[0], point[1] )
 
-    print("Distance from turtle to point: " + str(dist))
+    #print("Distance from turtle to point: " + str(dist))
 
-    print("Drawing line of half that distance ...")
+    #print("Drawing line of half that distance ...")
 
     forward(dist/2)
 
-    dot(5)
+    dot(2)

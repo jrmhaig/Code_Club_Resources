@@ -1,23 +1,28 @@
 from turtle import *
 
-# Turn towards a point
+# Draw several dots towards the line
 #
-# New commands:
-#   turtle.towards(x, y)
-#   turtle.setheading(angle)
-#
-# New syntax:
-#   array variables
+# New command:
+#   dot(size)
+
+penup()
 
 point = [ 100, 100 ]
 
-angle = towards(point[0], point[1])
-print("Angle to point is " + str(angle) + " degrees")
+for i in range(10):
+    angle = towards(point[0], point[1])
+    print("Angle to point is " + str(angle) + " degrees")
 
-print("Turning towards that point ...")
+    print("Turning towards that point ...")
 
-setheading(angle)
+    setheading(angle)
 
-print("Drawing line in that direction ...")
+    dist = distance(point[0], point[1])
 
-forward(100)
+    print("Distance from turtle to point: " + str(dist))
+
+    print("Drawing line of half that distance ...")
+
+    forward(dist/2)
+
+    dot(5)
