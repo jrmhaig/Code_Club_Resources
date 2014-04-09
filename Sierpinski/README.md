@@ -6,5 +6,5 @@ knowledge.
 
 The code is not written to be given out but rather as a guide for the teacher.
 
-I managed to get through everything except part 5 (function to choose a random
+I managed to get through everything except part 3 (function to choose a random
 start position and corners) in a little over an hour.
