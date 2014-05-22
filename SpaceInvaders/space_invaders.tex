@@ -1,0 +1,386 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Programming/Coding Assignment
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original author:
+% Ted Pavlic (http://www.tedpavlic.com)
+%
+% Note:
+% The \lipsum[#] commands throughout this template generate dummy text
+% to fill the template out. These commands should all be removed when 
+% writing assignment content.
+%
+% This template uses a Perl script as an example snippet of code, most other
+% languages are also usable. Configure them in the "CODE INCLUSION 
+% CONFIGURATION" section.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+\usepackage[usenames,dvipsnames]{color} % Required for custom colors
+\usepackage{graphicx} % Required to insert images
+\usepackage{listings} % Required for insertion of code
+\usepackage{courier} % Required for the courier font
+\usepackage{framed}
+\usepackage{wasysym}
+\usepackage{tcolorbox}
+%\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1} % Line spacing
+
+% Set up the header and footer
+\pagestyle{fancy}
+%\lhead{\hmwkAuthorName} % Top left header
+%\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime): \hmwkTitle} % Top center head
+\chead{\hmwkClass: \hmwkTitle} % Top center head
+%\rhead{\firstxmark} % Top right header
+\rhead{} % Top right header
+\lfoot{\lastxmark} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{Page\ \thepage\ of\ \protect\pageref{LastPage}} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+%----------------------------------------------------------------------------------------
+%	CODE INCLUSION CONFIGURATION
+%----------------------------------------------------------------------------------------
+
+\definecolor{MyDarkGreen}{rgb}{0.0,0.4,0.0} % This is the color used for comments
+\lstloadlanguages{Python} % Load Perl syntax for listings, for a list of other languages supported see: ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/listings/listings.pdf
+\lstset{language=Python, % Use Perl in this example
+        frame=single, % Single frame around code
+        basicstyle=\small\ttfamily, % Use small true type font
+        keywordstyle=[1]\color{Blue}\bf, % Perl functions bold and blue
+        keywordstyle=[2]\color{Purple}, % Perl function arguments purple
+        keywordstyle=[3]\color{Blue}\underbar, % Custom functions underlined and blue
+        identifierstyle=, % Nothing special about identifiers                                         
+        commentstyle=\usefont{T1}{pcr}{m}{sl}\color{MyDarkGreen}\small, % Comments small dark green courier font
+        stringstyle=\color{Purple}, % Strings are purple
+        showstringspaces=false, % Don't put marks in string spaces
+        tabsize=5, % 5 spaces per tab
+        %
+        % Put standard Perl functions not included in the default language here
+        morekeywords={rand},
+        %
+        % Put Perl function parameters here
+        morekeywords=[2]{on, off, interp},
+        %
+        % Put user defined functions here
+        morekeywords=[3]{test},
+       	%
+        morecomment=[l][\color{Blue}]{...}, % Line continuation (...) like blue comment
+        numbers=left, % Line numbers on left
+        firstnumber=1, % Line numbers start with line 1
+        numberstyle=\tiny\color{Blue}, % Line numbers are blue and small
+        stepnumber=5 % Line numbers go in steps of 5
+}
+
+% Creates a new command to include a perl script, the first parameter is the filename of the script (without .pl), the second parameter is the caption
+\newcommand{\pythonscript}[2]{
+\begin{itemize}
+\item[]\lstinputlisting[caption=#2,label=#1]{#1.py}
+\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT STRUCTURE COMMANDS
+%	Skip this unless you know what you're doing
+%----------------------------------------------------------------------------------------
+
+% Header and footer for when a page split occurs within a problem environment
+\newcommand{\enterProblemHeader}[1]{
+\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+}
+
+% Header and footer for when a page split occurs between problem environments
+\newcommand{\exitProblemHeader}[1]{
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1}{}\nobreak
+}
+
+\setcounter{secnumdepth}{0} % Removes default section numbers
+\newcounter{homeworkProblemCounter} % Creates a counter to keep track of the number of problems
+
+\newcommand{\challengeStepName}{}
+\newenvironment{challengeStep}[1][Step \arabic{homeworkProblemCounter}]{ % Makes a new environment called homeworkProblem which takes 1 argument (custom name) but the default is "Problem #"
+\stepcounter{homeworkProblemCounter} % Increase counter for number of problems
+\renewcommand{\challengeStepName}{#1} % Assign \homeworkProblemName the name of the problem
+\section{\challengeStepName} % Make a section in the document with the custom problem count
+\enterProblemHeader{\challengeStepName} % Header and footer within the environment
+}{
+\exitProblemHeader{\challengeStepName} % Header and footer after the environment
+}
+
+\newcommand{\problemAnswer}[1]{ % Defines the problem answer command with the content as the only argument
+\noindent\framebox[\columnwidth][c]{\begin{minipage}{0.98\columnwidth}#1\end{minipage}} % Makes the box around the problem answer and puts the content inside
+}
+
+\newcommand{\homeworkSectionName}{}
+\newenvironment{homeworkSection}[1]{ % New environment for sections within homework problems, takes 1 argument - the name of the section
+\renewcommand{\homeworkSectionName}{#1} % Assign \homeworkSectionName to the name of the section from the environment argument
+\subsection{\homeworkSectionName} % Make a subsection with the custom name of the subsection
+\enterProblemHeader{\challengeStepName\ [\homeworkSectionName]} % Header and footer within the environment
+}{
+\enterProblemHeader{\challengeStepName} % Header and footer after the environment
+}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CLASS SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\hmwkTitle}{Space Invaders} % Assignment title
+\newcommand{\hmwkDueDate}{Monday,\ January\ 1,\ 2012} % Due date
+\newcommand{\hmwkClass}{Code Club Challenge} % Course/class
+\newcommand{\hmwkClassTime}{10:30am} % Class/lecture time
+\newcommand{\hmwkClassInstructor}{Jones} % Teacher/lecturer
+\newcommand{\hmwkAuthorName}{John Smith} % Your name
+
+%\newenvironment{hint}{
+%  \begin{framed}
+%  \textbf{Hint}
+%
+%}{\end{framed}} % TODO put this in a box
+
+\definecolor{mycol}{rgb}{0.122, 0.435, 0.698}
+\newenvironment{hint}{
+  \begin{tcolorbox}[colback=green!5,colframe=green!40!black,title=Note]}
+{\end{tcolorbox}}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{
+\vspace{2in}
+\textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+%\normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate}\\
+%\vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+\vspace{3in}
+}
+
+%\author{\textbf{\hmwkAuthorName}}
+\date{} % Insert date here if you want it to appear below your name
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\setcounter{tocdepth}{1} % Uncomment this line if you don't want subsections listed in the ToC
+
+\newpage
+%\tableofcontents
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 1
+%----------------------------------------------------------------------------------------
+
+\section{TODO}
+
+\begin{itemize}
+  \item Images
+\end{itemize}
+
+\section{Setting up}
+
+One of the very first computer games was called "Space Invaders"\footnote{It
+was apparently originally created in 1978, which makes it almost as old as me!}
+and we are going to try to recreate it in Python. We will use the PyGame
+module, which (unfortunately) only works on Python version 2 on the Raspberry
+Pi so open \emph{Idle} instead of \emph{Idle3.} The first bit of code to type in
+just creates the game window and runs the game loop.
+
+\pythonscript{step1}{The main game loop}
+
+\section{Controlling the ship}
+
+The first thing to do is to add the ship that you (the player) will control.
+This will move left and right along the bottom of the screen while the aliens,
+which you have to shoot, will go at the top. Look at the script below and see
+what you need to change in the program you have written in the first step.
+
+Can you identify the parts that:
+
+\begin{itemize}
+  \item Finds the picture file to use for the ship?
+  \item Tells the computer where to put the ship?
+  \item Finds out if you are pressing the left or right buttons?
+\end{itemize}
+
+\pythonscript{step2}{Controlling the ship}
+
+\section{Make the movement easier}
+
+You have probably noticed that the movement of the ship is not very easy. You
+really want to be able to hold the key pressed rather than having to press it
+lots of times. The reason it is acting the way it is is because when it
+detects a keyboard \emph{event} with \texttt{event.type == pygame.KEYDOWN} it sees
+the single action when you press the key and moves the ship once. What we
+really want is for it to tell when the key is pressed and then keep moving
+the ship until it is released, with \texttt{event.type == pygame.KEYUP}.
+
+\pythonscript{step3}{Easier control of the ship}
+
+\section{Add a bit of \emph{class}}
+
+Now we have managed to get the ship moving more easily but do you see what
+happens when you go to the edge of the window? We will solve this later.
+First, we are going to introduce a new
+programming idea; \emph{Classes.}
+
+So far, we have just a single thing in our game -- a ship that you can control
+with the arrow keys. Later we will also have a number of aliens as well as
+bullets, and all of these have very similar information about them and actions.
+For example, they all have a position (x and y) and they all need to move.
+With a Class we can write code for them all once and only once.
+
+\begin{hint}
+Note, some of the lines marked ``Changed'' have very small changes, even just a
+single character, while others replace several lines with just one.
+
+Can you see how I stopped the ship going off the side of the window?
+
+Can you work out how to make it move faster or slower?
+\end{hint}
+
+\pythonscript{step4}{Adding classes}
+
+\section{Explanation}
+
+In the previous section we added a \emph{Class} called \texttt{GamePiece}.
+By itself, this does not do anything to it provides a pattern from which
+we created an \emph{Object} for the ship. Later, we will add another object
+for an alien and our code will contain:
+
+\pythonscript{explanation1}{Object creation example}
+
+Each of these is separate from the other and has its own x and y coordinates.
+They also both know how to move and draw themselves in the correct position
+in the window if we call the functions:
+
+\pythonscript{explanation2}{Function call example}
+
+and we can even set their speeds with:
+
+\pythonscript{explanation3}{Setting object variables}
+
+\begin{hint}
+This may be the answer to one of the questions in the last section!
+\end{hint}
+
+As well as the \texttt{move} and \texttt{draw} functions you will see another
+function called \texttt{\_\_init\_\_} (that is a double `\_' before and after
+the word `init'. This is a special function that is always run once when the
+object is created with \texttt{ship = GamePiece(320, 410, ship\_image)}.
+This makes sure that all the variables have the correct values at the start.
+
+\section{Add an alien}
+
+The real Space Invaders game has lots of aliens in rows but for the moment we
+will start with just one. As I said in the last section, a lot of the work is
+already done for us as we can use the \texttt{GamePiece} class.
+
+\begin{hint}
+I am not going to write out the whole code from now, only the parts that need
+to change.
+\end{hint}
+
+First, make some changes to the \texttt{GamePiece} class to let the alien
+``bounce'' when it reaches the side of the screen.
+
+\pythonscript{step5changes1}{Changes to the class}
+
+Next, this is all that is needed to create the alien.
+
+\pythonscript{step5changes2}{Create the alien object}
+
+\pythonscript{step5changes3}{Use the alien object}
+
+\section{Shoot the alien}
+
+The next thing to do is to let you try to shoot the alien. For this, we need
+to load an image of a bullet with this line (try to find the correct place to
+put it):
+
+\pythonscript{step6bulletimage}{Load the bullet image}
+
+Now the bullet needs to move up the screen, rather than left or right, and
+then disappear when it reaches the top. For this we need to add some new
+variables to the \texttt{\_\_init\_\_} function:
+
+\pythonscript{step6init}{New variables}
+
+and add a new part to the \texttt{move} function:
+
+\pythonscript{step6move}{New move function}
+
+At the start of the game, the bullet doesn't exist and we can indicate this
+with:
+
+\pythonscript{step6initialisebullet}{Initialise bullet}
+
+And finally, the bullet should appear when we press the `SPACE' bar.
+
+\pythonscript{step6fire}{Fire!}
+
+\section{Hit the alien}
+
+You may have noticed that the bullet currently just goes straight through the
+alien. This isn't very good! In the \texttt{GamePiece} class we need a new
+function to detect if it has been hit.
+
+\pythonscript{step7hit}{Detect a hit}
+
+At the moment there is only one alien so when it is hit we will put it back
+at the top and make it move faster. Later, we can have several rows of aliens
+and try to keep a score.
+
+\pythonscript{step7hit2}{Hit the alien}
+
+\section{More aliens}
+
+TODO
+
+and lose if aliens reach the bottom.
+
+\section{Keep score}
+
+TODO
+
+\section{Aliens' bullets}
+
+TODO
+
+\section{Next levels}
+
+TODO
+
+\end{document}
