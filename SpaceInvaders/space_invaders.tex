@@ -96,10 +96,17 @@
         stepnumber=5 % Line numbers go in steps of 5
 }
 
-% Creates a new command to include a perl script, the first parameter is the filename of the script (without .pl), the second parameter is the caption
+% Create new commands to include python and bash scripts. The first parameter
+% is the filename of the script without .py or .sh and the second parameter
+% is the caption.
 \newcommand{\pythonscript}[2]{
 \begin{itemize}
 \item[]\lstinputlisting[caption=#2,label=#1]{#1.py}
+\end{itemize}
+}
+\newcommand{\bashscript}[2]{
+\begin{itemize}
+\item[]\lstinputlisting[caption=#2,label=#1]{#1.sh}
 \end{itemize}
 }
 
@@ -203,22 +210,30 @@
 %	PROBLEM 1
 %----------------------------------------------------------------------------------------
 
-\section{TODO}
-
-\begin{itemize}
-  \item Images
-\end{itemize}
-
 \section{Setting up}
 
 One of the very first computer games was called "Space Invaders"\footnote{It
 was apparently originally created in 1978, which makes it almost as old as me!}
-and we are going to try to recreate it in Python. We will use the PyGame
-module, which (unfortunately) only works on Python version 2 on the Raspberry
-Pi so open \emph{Idle} instead of \emph{Idle3.} The first bit of code to type in
-just creates the game window and runs the game loop.
+and we are going to try to recreate it in Python.
 
-\pythonscript{step1}{The main game loop}
+To get started, open LXTerminal and use the following command to download the
+start of the project:
+
+\bashscript{setup}{Get the the starting point}
+
+This should create a new directory called \texttt{space\_invaders} containing
+a Python program and some icons. Open the program with:
+
+\bashscript{openscript}{Opening the starting point}
+
+\begin{hint}
+We need to use idle (for Python version 2) instead of idle3 (for Python
+version 3) because the PyGame module only works for Python version 2 on the
+Raspberry Pi at the moment.
+
+You could also launch Idle from the desktop icon and then browse to the
+correct directory to open the file.
+\end{hint}
 
 \section{Controlling the ship}
 
@@ -235,7 +250,7 @@ Can you identify the parts that:
   \item Finds out if you are pressing the left or right buttons?
 \end{itemize}
 
-\pythonscript{step2}{Controlling the ship}
+%\pythonscript{step2}{Controlling the ship}
 
 \section{Make the movement easier}
 
@@ -247,7 +262,7 @@ the single action when you press the key and moves the ship once. What we
 really want is for it to tell when the key is pressed and then keep moving
 the ship until it is released, with \texttt{event.type == pygame.KEYUP}.
 
-\pythonscript{step3}{Easier control of the ship}
+%\pythonscript{step3}{Easier control of the ship}
 
 \section{Add a bit of \emph{class}}
 
@@ -271,7 +286,7 @@ Can you see how I stopped the ship going off the side of the window?
 Can you work out how to make it move faster or slower?
 \end{hint}
 
-\pythonscript{step4}{Adding classes}
+%\pythonscript{step4}{Adding classes}
 
 \section{Explanation}
 
@@ -280,17 +295,17 @@ By itself, this does not do anything to it provides a pattern from which
 we created an \emph{Object} for the ship. Later, we will add another object
 for an alien and our code will contain:
 
-\pythonscript{explanation1}{Object creation example}
+%\pythonscript{explanation1}{Object creation example}
 
 Each of these is separate from the other and has its own x and y coordinates.
 They also both know how to move and draw themselves in the correct position
 in the window if we call the functions:
 
-\pythonscript{explanation2}{Function call example}
+%\pythonscript{explanation2}{Function call example}
 
 and we can even set their speeds with:
 
-\pythonscript{explanation3}{Setting object variables}
+%\pythonscript{explanation3}{Setting object variables}
 
 \begin{hint}
 This may be the answer to one of the questions in the last section!
@@ -316,13 +331,13 @@ to change.
 First, make some changes to the \texttt{GamePiece} class to let the alien
 ``bounce'' when it reaches the side of the screen.
 
-\pythonscript{step5changes1}{Changes to the class}
+%\pythonscript{step5changes1}{Changes to the class}
 
 Next, this is all that is needed to create the alien.
 
-\pythonscript{step5changes2}{Create the alien object}
+%\pythonscript{step5changes2}{Create the alien object}
 
-\pythonscript{step5changes3}{Use the alien object}
+%\pythonscript{step5changes3}{Use the alien object}
 
 \section{Shoot the alien}
 
@@ -330,26 +345,26 @@ The next thing to do is to let you try to shoot the alien. For this, we need
 to load an image of a bullet with this line (try to find the correct place to
 put it):
 
-\pythonscript{step6bulletimage}{Load the bullet image}
+%\pythonscript{step6bulletimage}{Load the bullet image}
 
 Now the bullet needs to move up the screen, rather than left or right, and
 then disappear when it reaches the top. For this we need to add some new
 variables to the \texttt{\_\_init\_\_} function:
 
-\pythonscript{step6init}{New variables}
+%\pythonscript{step6init}{New variables}
 
 and add a new part to the \texttt{move} function:
 
-\pythonscript{step6move}{New move function}
+%\pythonscript{step6move}{New move function}
 
 At the start of the game, the bullet doesn't exist and we can indicate this
 with:
 
-\pythonscript{step6initialisebullet}{Initialise bullet}
+%\pythonscript{step6initialisebullet}{Initialise bullet}
 
 And finally, the bullet should appear when we press the `SPACE' bar.
 
-\pythonscript{step6fire}{Fire!}
+%\pythonscript{step6fire}{Fire!}
 
 \section{Hit the alien}
 
@@ -357,13 +372,13 @@ You may have noticed that the bullet currently just goes straight through the
 alien. This isn't very good! In the \texttt{GamePiece} class we need a new
 function to detect if it has been hit.
 
-\pythonscript{step7hit}{Detect a hit}
+%\pythonscript{step7hit}{Detect a hit}
 
 At the moment there is only one alien so when it is hit we will put it back
 at the top and make it move faster. Later, we can have several rows of aliens
 and try to keep a score.
 
-\pythonscript{step7hit2}{Hit the alien}
+%\pythonscript{step7hit2}{Hit the alien}
 
 \section{More aliens}
 
