@@ -212,7 +212,7 @@
 
 \section{Setting up}
 
-One of the very first computer games was called "Space Invaders"\footnote{It
+One of the very first computer games was called ``Space Invaders''\footnote{It
 was apparently originally created in 1978, which makes it almost as old as me!}
 and we are going to try to recreate it in Python.
 
@@ -240,8 +240,9 @@ correct directory to open the file.
 The first thing to do is to add the ship that you (the player) will control.
 This will move left and right along the bottom of the screen while the aliens,
 which you have to shoot, will go at the top. Look at the script below and see
-what you need to change in the program you have written in the first step.
+what you need to change.
 
+\begin{hint}
 Can you identify the parts that:
 
 \begin{itemize}
@@ -249,8 +250,9 @@ Can you identify the parts that:
   \item Tells the computer where to put the ship?
   \item Finds out if you are pressing the left or right buttons?
 \end{itemize}
+\end{hint}
 
-%\pythonscript{step2}{Controlling the ship}
+\pythonscript{controls}{Controlling the ship}
 
 \section{Make the movement easier}
 
@@ -262,14 +264,19 @@ the single action when you press the key and moves the ship once. What we
 really want is for it to tell when the key is pressed and then keep moving
 the ship until it is released, with \texttt{event.type == pygame.KEYUP}.
 
-%\pythonscript{step3}{Easier control of the ship}
+\begin{hint}
+I have not printed all the code, indicating missing bits with `\ldots', to save
+space.
+\end{hint}
+
+\pythonscript{smoothcontrol}{Easier control of the ship}
 
 \section{Add a bit of \emph{class}}
 
 Now we have managed to get the ship moving more easily but do you see what
 happens when you go to the edge of the window? We will solve this later.
 First, we are going to introduce a new
-programming idea; \emph{Classes.}
+programming idea; \emph{Classes} and \emph{Objects.}
 
 So far, we have just a single thing in our game -- a ship that you can control
 with the arrow keys. Later we will also have a number of aliens as well as
@@ -286,7 +293,7 @@ Can you see how I stopped the ship going off the side of the window?
 Can you work out how to make it move faster or slower?
 \end{hint}
 
-%\pythonscript{step4}{Adding classes}
+\pythonscript{classes}{Adding classes}
 
 \section{Explanation}
 
@@ -295,17 +302,17 @@ By itself, this does not do anything to it provides a pattern from which
 we created an \emph{Object} for the ship. Later, we will add another object
 for an alien and our code will contain:
 
-%\pythonscript{explanation1}{Object creation example}
+\pythonscript{explanation1}{Object creation example}
 
 Each of these is separate from the other and has its own x and y coordinates.
 They also both know how to move and draw themselves in the correct position
 in the window if we call the functions:
 
-%\pythonscript{explanation2}{Function call example}
+\pythonscript{explanation2}{Function call example}
 
 and we can even set their speeds with:
 
-%\pythonscript{explanation3}{Setting object variables}
+\pythonscript{explanation3}{Setting object variables}
 
 \begin{hint}
 This may be the answer to one of the questions in the last section!
@@ -314,7 +321,7 @@ This may be the answer to one of the questions in the last section!
 As well as the \texttt{move} and \texttt{draw} functions you will see another
 function called \texttt{\_\_init\_\_} (that is a double `\_' before and after
 the word `init'. This is a special function that is always run once when the
-object is created with \texttt{ship = GamePiece(320, 410, ship\_image)}.
+object is created with \texttt{ship = GamePiece(150, 260, ship\_image)}.
 This makes sure that all the variables have the correct values at the start.
 
 \section{Add an alien}
@@ -323,21 +330,16 @@ The real Space Invaders game has lots of aliens in rows but for the moment we
 will start with just one. As I said in the last section, a lot of the work is
 already done for us as we can use the \texttt{GamePiece} class.
 
-\begin{hint}
-I am not going to write out the whole code from now, only the parts that need
-to change.
-\end{hint}
-
 First, make some changes to the \texttt{GamePiece} class to let the alien
 ``bounce'' when it reaches the side of the screen.
 
-%\pythonscript{step5changes1}{Changes to the class}
+\pythonscript{bounce}{Changes to the class}
 
 Next, this is all that is needed to create the alien.
 
-%\pythonscript{step5changes2}{Create the alien object}
+\pythonscript{makealien}{Create the alien object}
 
-%\pythonscript{step5changes3}{Use the alien object}
+\pythonscript{usealien}{Use the alien object}
 
 \section{Shoot the alien}
 
