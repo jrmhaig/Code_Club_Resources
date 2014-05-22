@@ -35,7 +35,7 @@ class GamePiece:                                            # New
         screen.blit(self.image, (self.x, self.y))           # New
 
 # Images
-ship_image = pygame.image.load('ship.png')
+ship_image = pygame.image.load('icons/ship.png')
 
 # Game objects                                              # Changed
 ship = GamePiece(150, 260, ship_image)                      # Changed

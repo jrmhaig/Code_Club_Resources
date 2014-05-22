@@ -347,26 +347,26 @@ The next thing to do is to let you try to shoot the alien. For this, we need
 to load an image of a bullet with this line (try to find the correct place to
 put it):
 
-%\pythonscript{step6bulletimage}{Load the bullet image}
+\pythonscript{loadbullet}{Load the bullet image}
 
 Now the bullet needs to move up the screen, rather than left or right, and
 then disappear when it reaches the top. For this we need to add some new
 variables to the \texttt{\_\_init\_\_} function:
 
-%\pythonscript{step6init}{New variables}
+\pythonscript{bulletinit}{New variables}
 
 and add a new part to the \texttt{move} function:
 
-%\pythonscript{step6move}{New move function}
+\pythonscript{bulletmove}{New move function}
 
 At the start of the game, the bullet doesn't exist and we can indicate this
 with:
 
-%\pythonscript{step6initialisebullet}{Initialise bullet}
+\pythonscript{initialisebullet}{Initialise bullet}
 
 And finally, the bullet should appear when we press the `SPACE' bar.
 
-%\pythonscript{step6fire}{Fire!}
+\pythonscript{fire}{Fire!}
 
 \section{Hit the alien}
 
@@ -374,13 +374,13 @@ You may have noticed that the bullet currently just goes straight through the
 alien. This isn't very good! In the \texttt{GamePiece} class we need a new
 function to detect if it has been hit.
 
-%\pythonscript{step7hit}{Detect a hit}
+\pythonscript{detecthit}{Detect a hit}
 
 At the moment there is only one alien so when it is hit we will put it back
 at the top and make it move faster. Later, we can have several rows of aliens
 and try to keep a score.
 
-%\pythonscript{step7hit2}{Hit the alien}
+\pythonscript{hitalien}{Hit the alien}
 
 \section{More aliens}
 

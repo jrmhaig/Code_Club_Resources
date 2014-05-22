@@ -1,8 +1,8 @@
 ...
 
 # Images
-ship_image = pygame.image.load('ship.png')
-alien_image = pygame.image.load('alien.png')            # New
+ship_image = pygame.image.load('icons/ship.png')
+alien_image = pygame.image.load('icons/alien.png')      # New
 
 ship = GamePiece(150, 260, ship_image)
 alien = GamePiece(150, 30, alien_image)                 # New
