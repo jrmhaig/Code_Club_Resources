@@ -2,21 +2,21 @@
         ...
         elif event.type == pygame.KEYDOWN:
             # A key has been pressed
-            ...
-            elif event.key == pygame.K_SPACE and bullet == None:        # New
-                # Fire the bullet from the mid-point of the ship        # New
-                bullet = GamePiece(ship.x + 22, ship.y, bullet_image)   # New
-                bullet.move_up = True                                   # New
+            ...                               # New (next 4 lines)
+            elif event.key == pygame.K_SPACE and bullet == None:
+                # Fire the bullet from the mid-point of the ship
+                bullet = GamePiece(ship.x+22, ship.y, bullet_image)
+                bullet.move_up = True
     ...
 
     # Move and draw the alien
     alien.move()
     alien.draw()
 
-    # Move and draw the bullet                                          # New
-    if bullet != None:                                                  # New
-        bullet.move()                                                   # New
-        if bullet.y > bullet.min_y:                                     # New
-            bullet.draw()                                               # New
-        else:                                                           # New
-            bullet = None                                               # New
+    # Move and draw the bullet                     # New
+    if bullet != None:                             # New
+        bullet.move()                              # New
+        if bullet.y > bullet.min_y:                # New
+            bullet.draw()                          # New
+        else:                                      # New
+            bullet = None                          # New
