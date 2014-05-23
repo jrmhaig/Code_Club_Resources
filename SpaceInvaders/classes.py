@@ -65,9 +65,8 @@ while run:
                 # Stop moving the ship right
                 ship.move_right = False                     # Changed
 
+    # Move and draw the ship                                # Changed
     ship.move()                                             # Changed
-
-    # Put the ship on the screen
     ship.draw()                                             # Changed
 
     # Refresh the screen

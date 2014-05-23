@@ -1,7 +1,7 @@
     # Move and draw the bullet
     if bullet != None:
         bullet.move()
-        if bullet.x > bullet.min_x:
+        if bullet.y > bullet.min_y:
             bullet.draw()
             if alien.detect_hit(bullet):                # New
                 # Move the alien back to the top        # New

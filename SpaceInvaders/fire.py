@@ -9,14 +9,14 @@
                 bullet.move_up = True                                   # New
     ...
 
-    # Put the ship on the screen
-    ship.draw()
+    # Move and draw the alien
+    alien.move()
     alien.draw()
 
     # Move and draw the bullet                                          # New
     if bullet != None:                                                  # New
         bullet.move()                                                   # New
-        if bullet.x > bullet.min_x:                                     # New
+        if bullet.y > bullet.min_y:                                     # New
             bullet.draw()                                               # New
         else:                                                           # New
             bullet = None                                               # New

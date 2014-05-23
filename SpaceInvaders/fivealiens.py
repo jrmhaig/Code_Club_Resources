@@ -1,5 +1,6 @@
 ...
 
+bullet = None
 ship = GamePiece(150, 260, ship_image)
 aliens = []                                         # Changed
 for i in range(5):                                  # New
@@ -16,7 +17,6 @@ for i in range(5):                                  # New
     alien.width = 47                                # Changed
     alien.height = 22                               # Changed
     aliens.append(alien)                            # New
-bullet = None
 
 run = True
 

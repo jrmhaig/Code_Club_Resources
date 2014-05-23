@@ -1,10 +1,11 @@
 ...
 
+    # Move and draw the ship
     ship.move()
-    alien.move()                    # New
-
-    # Put the ship on the screen
     ship.draw()
+
+    # Move and draw the alien       # New
+    alien.move()                    # New
     alien.draw()                    # New
 
 ...
