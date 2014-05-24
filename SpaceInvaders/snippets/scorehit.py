@@ -13,4 +13,4 @@
             bullet = None
 
     score_text = font.render("Score: " + str(score), 1, BLUE) # New
-    screen.blit(score_label, (10, 10))                        # New
+    screen.blit(score_text, (10, 10))                         # New
