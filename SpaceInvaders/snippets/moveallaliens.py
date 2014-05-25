@@ -8,6 +8,9 @@
     for alien in aliens:                                # Changed
         alien.move()                                    # Changed
         alien.draw()                                    # Changed
+        if alien.y > 260:                               # New
+            # Alien has reached the bottom              # New
+            run == False                                # New
 
     # Move and draw the bullet
     if bullet != None:
