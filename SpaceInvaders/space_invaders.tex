@@ -157,7 +157,7 @@
 %	NAME AND CLASS SECTION
 %----------------------------------------------------------------------------------------
 
-\newcommand{\hmwkTitle}{Space Invaders} % Assignment title
+\newcommand{\hmwkTitle}{Space Invaders (Part 1)} % Assignment title
 \newcommand{\hmwkDueDate}{Monday,\ January\ 1,\ 2012} % Due date
 \newcommand{\hmwkClass}{Code Club Challenge} % Course/class
 \newcommand{\hmwkClassTime}{10:30am} % Class/lecture time
@@ -254,23 +254,6 @@ Can you identify the parts that:
 
 \pythonscript{controls}{Controlling the ship}
 
-\section{Make the movement easier}
-
-You have probably noticed that the movement of the ship is not very easy. You
-really want to be able to hold the key pressed rather than having to press it
-lots of times. The reason it is acting the way it is is because when it
-detects a keyboard \emph{event} with \texttt{event.type == pygame.KEYDOWN} it sees
-the single action when you press the key and moves the ship once. What we
-really want is for it to tell when the key is pressed and then keep moving
-the ship until it is released, with \texttt{event.type == pygame.KEYUP}.
-
-\begin{hint}
-I have not printed all the code, indicating missing bits with `\ldots', to save
-space.
-\end{hint}
-
-\pythonscript{smoothcontrol}{Easier control of the ship}
-
 \section{Add a bit of \emph{class}}
 
 Now we have managed to get the ship moving more easily but do you see what
@@ -331,7 +314,8 @@ will start with just one. As I said in the last section, a lot of the work is
 already done for us as we can use the \texttt{GamePiece} class.
 
 First, make some changes to the \texttt{GamePiece} class to let the alien
-``bounce'' when it reaches the side of the screen.
+know which way it is going and then ``bounce'' when it reaches the side of the
+screen.
 
 \pythonscript{bounce}{Changes to the class}
 
@@ -350,8 +334,8 @@ put it):
 \pythonscript{loadbullet}{Load the bullet image}
 
 Now the bullet needs to move up the screen, rather than left or right, and
-then disappear when it reaches the top. For this we need to add some new
-variables to the \texttt{\_\_init\_\_} function:
+then disappear when it reaches the top. For this we need to add a new
+variable to the \texttt{\_\_init\_\_} function:
 
 \pythonscript{bulletinit}{New variables}
 
@@ -382,32 +366,43 @@ and try to keep a score.
 
 \pythonscript{hitalien}{Hit the alien}
 
-\section{More aliens}
+\section{Next steps}
 
-Now we will make a line of 5 aliens and store them in an array.
+There is still some more thing to do to get the full Space Invaders game:
 
-\pythonscript{fivealiens}{Line of 5 aliens}
+\begin{itemize}
+  \item Several aliens in a number of rows
+  \item Let the aliens fire bullets as well as the player
+  \item Keep a score
+  \item Add some sound
+\end{itemize}
 
-Get them all to move and get hit by bullets, and you lose the game if they
-reach the bottom.
-
-\pythonscript{moveallaliens}{Line of 5 aliens}
-
-\section{Score}
-
-It is about time we kept the score. For the moment, we will give 10 points
-for each hit.
-
-Make variable for the score and prepare the type font.
-
-\pythonscript{scorevariable}{Score variable}
-
-Add 10 points for each alien hit and display the score.
-
-\pythonscript{scorehit}{Score a hit}
-
-\section{To do}
-
-Alien bullets, more levels.
+%\section{More aliens}
+%
+%Now we will make a line of 5 aliens and store them in an array.
+%
+%\pythonscript{fivealiens}{Line of 5 aliens}
+%
+%Get them all to move and get hit by bullets, and you lose the game if they
+%reach the bottom.
+%
+%\pythonscript{moveallaliens}{Line of 5 aliens}
+%
+%\section{Score}
+%
+%It is about time we kept the score. For the moment, we will give 10 points
+%for each hit.
+%
+%Make variable for the score and prepare the type font.
+%
+%\pythonscript{scorevariable}{Score variable}
+%
+%Add 10 points for each alien hit and display the score.
+%
+%\pythonscript{scorehit}{Score a hit}
+%
+%\section{To do}
+%
+%Alien bullets, more levels.
 
 \end{document}

@@ -5,8 +5,8 @@
             bullet.draw()
             if alien.detect_hit(bullet):                # New
                 # Move the alien back to the top        # New
-                alien.x = 10                            # New
-                alien.y = 10                            # New
+                alien.x = 150                           # New
+                alien.y = 30                            # New
                 # Move it a bit faster                  # New
                 alien.speed = alien.speed + 0.1         # New
                 bullet = None                           # New
