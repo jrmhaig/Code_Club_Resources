@@ -1,5 +1,3 @@
-ship.move()
-alien.move()
+ship.move(LEFT)
 
 ship.draw()
-alien.draw()

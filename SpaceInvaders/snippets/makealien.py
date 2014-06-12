@@ -8,9 +8,10 @@ ship = GamePiece(150, 260, ship_image)
 alien = GamePiece(150, 30, alien_image)                 # New
 
 # Make the alien move by itself                         # New
-alien.move_left = True                                  # New
+alien.direction = LEFT                                  # New
 # Make the alien bounce when it hits the edge           # New
 alien.bounce = True                                     # New
+# Make the alien a bit slower                           # New
 alien.speed = 0.3                                       # New
 
 ...

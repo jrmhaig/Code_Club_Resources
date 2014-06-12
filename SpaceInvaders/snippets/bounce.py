@@ -5,28 +5,29 @@ class GamePiece:
         self.x = x
         self.y = y
         self.speed = 1
+        self.direction = 0                              # New
+        self.bounce = False                             # New
         self.image = image
-        self.move_left = False
-        self.move_right = False
         self.min_x = 10
         self.max_x = 340
-        self.bounce = False                             # New
 
-    def move(self):
-        if self.move_left:
+    def move(self, direction = None):                   # Changed
+        if direction == None:                           # New
+            # The function was called as: move()        # New
+            direction = self.direction                  # New
+
+        if direction == LEFT:
             if self.x > self.min_x:
                 self.x = self.x - self.speed
             elif self.bounce:                           # New
                 self.y = self.y + 5                     # New
-                self.move_left = False                  # New
-                self.move_right = True                  # New
-        if self.move_right:
+                self.direction = RIGHT                  # New
+        elif direction == RIGHT:
             if self.x < self.max_x:
                 self.x = self.x + self.speed
             elif self.bounce:                           # New
                 self.y = self.y + 5                     # New
-                self.move_left = True                   # New
-                self.move_right = False                 # New
+                self.direction = LEFT                   # New
 
     def draw(self):
         screen.blit(self.image, (self.x, self.y))

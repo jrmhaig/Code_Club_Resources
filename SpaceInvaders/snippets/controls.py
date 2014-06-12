@@ -11,6 +11,7 @@ pygame.init()
 clock = pygame.time.Clock()
 game_speed = 85
 screen = pygame.display.set_mode((WIDTH, HEIGHT), 0)
+pygame.key.set_repeat(1, 10)
 
 # Images                                                # New
 ship_image = pygame.image.load('icons/ship.png')        # New

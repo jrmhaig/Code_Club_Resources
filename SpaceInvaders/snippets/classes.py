@@ -7,10 +7,17 @@ WHITE = (255,255,255)
 WIDTH = 400
 HEIGHT = 300
 
+# Directions                                            # New
+LEFT = 1                                                # New
+RIGHT = 2                                               # New
+UP = 3                                                  # New
+DOWN = 4                                                # New
+
 pygame.init()
 clock = pygame.time.Clock()
 game_speed=85
 screen = pygame.display.set_mode((WIDTH, HEIGHT), 0)
+pygame.key_set_repeat(1, 10)
 
 class GamePiece:                                        # New
     def __init__(self, x, y, image):                    # New
@@ -18,16 +25,14 @@ class GamePiece:                                        # New
         self.y = y                                      # New
         self.speed = 1                                  # New
         self.image = image                              # New
-        self.move_left = False                          # New
-        self.move_right = False                         # New
         self.min_x = 10                                 # New
         self.max_x = 340                                # New
 
-    def move(self):                                     # New
-        if self.move_left:                              # New
+    def move(self, direction):                          # New
+        if direction == LEFT:                           # New
             if self.x > self.min_x:                     # New
                 self.x = self.x - self.speed            # New
-        if self.move_right:                             # New
+        elif direction == RIGHT:                        # New
             if  self.x < self.max_x:                    # New
                 self.x = self.x + self.speed            # New
 
@@ -52,21 +57,12 @@ while run:
             # A key has been pressed
             if event.key == pygame.K_LEFT:
                 # Start moving the ship left
-                ship.move_left = True                   # Changed
+                ship.move(LEFT)                         # Changed
             elif event.key == pygame.K_RIGHT:
                 # Start moving the ship right
-                ship.move_right = True                  # Changed
-        elif event.type == pygame.KEYUP:
-            # A key has been released
-            if event.key == pygame.K_LEFT:
-                # Stop moving the ship left
-                ship.move_left = False                  # Changed
-            elif event.key == pygame.K_RIGHT:
-                # Stop moving the ship right
-                ship.move_right = False                 # Changed
+                ship.move(RIGHT)                        # Changed
 
     # Move and draw the ship                            # Changed
-    ship.move()                                         # Changed
     ship.draw()                                         # Changed
 
     # Refresh the screen
