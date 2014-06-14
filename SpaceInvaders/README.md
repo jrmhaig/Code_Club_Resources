@@ -9,3 +9,7 @@ The pdf file provided is made from the up-to-date version of `space_invaders.tex
 Then to generate the worksheet pdf file use:
 
     pdflatex space_invaders.tex
+
+## To do
+
+Write part 2.
