@@ -2,7 +2,7 @@
 
 ## Getting the worksheet
 
-Download the [PDF version of the worksheet here.](https://github.com/jrmhaig/rpi_projects/blob/master/SpaceInvaders/space_invaders.pdf?raw=true)/
+Download the [PDF version of the worksheet here.](https://github.com/jrmhaig/rpi_projects/blob/master/SpaceInvaders/space_invaders.pdf?raw=true)
 
 ## Making changes
 
