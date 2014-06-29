@@ -62,7 +62,7 @@ while run:
                 # Start moving the ship right
                 ship.move(RIGHT)                        # Changed
 
-    # Move and draw the ship                            # Changed
+    # Put the ship on the screen                        # Changed
     ship.draw()                                         # Changed
 
     # Refresh the screen

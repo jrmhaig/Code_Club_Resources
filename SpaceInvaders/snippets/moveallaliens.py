@@ -1,7 +1,6 @@
 ...
 
-    # Move and draw the ship
-    ship.move()
+    # Put the ship on the screen
     ship.draw()
 
     # Move and draw the aliens                          # Changed
