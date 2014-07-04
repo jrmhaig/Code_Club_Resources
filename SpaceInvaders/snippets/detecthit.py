@@ -19,7 +19,7 @@ class GamePiece:
             return False                            # New
 ...
 # Make the alien move by itself
-alien.move_left = True
+alien.direction = LEFT
 # Make the alien bounce when it hits the edge
 alien.bounce = True
 alien.speed = 0.3

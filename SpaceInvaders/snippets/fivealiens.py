@@ -9,7 +9,7 @@ for i in range(5):                                  # New
     alien.min_x = 20 + i*50                         # New
     alien.max_x = 140 + i*50                        # New
     # Make the alien move by itself                 # Changed
-    alien.move_left = True                          # Changed
+    alien.direction = LEFT                          # Changed
     # Make the alien bounce when it hits the edge   # Changed
     alien.bounce = True                             # Changed
     alien.speed = 0.3                               # Changed

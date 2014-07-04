@@ -1,1 +1,1 @@
-$ git clone http://github.com/jrmhaig/space_invaders
+git clone https://github.com/jrmhaig/space_invaders
