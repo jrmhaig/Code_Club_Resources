@@ -10,7 +10,7 @@ class Alien(Actor):
     def __init__(self, image):
         super(image)
 
-alien1 = Actor('ship')
+alien1 = Actor('alien1')
 
 def draw():
     screen.clear()
