@@ -1,3 +1,5 @@
+from random import randrange
+
 # Size of the screen
 WIDTH = 800
 HEIGHT = 600
@@ -11,9 +13,9 @@ def y_percent(y):
 # Data on the aliens
 ALIEN_DATA = [
     { 'image': 'alien1', 'bullet': 'alien1-bullet' },
-    { 'image': 'alien2', 'bullet': 'alien2-bullet', 'score': 30 },
-    { 'image': 'alien3', 'bullet': 'alien3-bullet', 'score': 20 },
-    { 'image': 'alien4', 'bullet': 'alien4-bullet', 'score': 10 }]
+    { 'image': 'alien2', 'bullet': 'alien2-bullet', 'shoot_chance': 1, 'score': 30 },
+    { 'image': 'alien3', 'bullet': 'alien3-bullet', 'shoot_chance': 1, 'score': 20 },
+    { 'image': 'alien4', 'bullet': 'alien4-bullet', 'shoot_chance': 1, 'score': 10 }]
 # Number of aliens in a row
 ALIEN_ROW_LENGTH = 10
 # Alien types in each row (top to bottom)
@@ -36,11 +38,13 @@ SCORE_POS = x_percent(2), y_percent(2)
 BULLET_SPEED = 3
 # Maximum number of bullets on the screen
 MAX_BULLETS = 5
+# Maximum number of alien bullets
+MAX_ALIEN_BULLETS = 10
 
 ship = Actor('ship', (x_percent(50), y_percent(95)))
 ship.speed = 5
 ship.x_min = x_percent(5)
-ship.x_max = y_percent(95)
+ship.x_max = x_percent(95)
 
 class Bullet(Actor):
     def __init__(self, speed, *args, **kwargs):
@@ -50,6 +54,8 @@ class Bullet(Actor):
     def move(self):
         self.y += self.speed
 
+aliens = []
+alien_bullets = []
 class Alien(Actor):
     def __init__(self, alien_type, pos, x_min, x_max, anchor=('center', 'center')):
         super(Alien, self).__init__(ALIEN_DATA[alien_type]['image'], pos, anchor)
@@ -57,6 +63,7 @@ class Alien(Actor):
         self.x_max = x_max
         self.h_speed = 1
         self.v_speed = -1
+        self.data = ALIEN_DATA[alien_type]
         self.score = ALIEN_DATA[alien_type]['score']
 
     def move(self):
@@ -64,8 +71,9 @@ class Alien(Actor):
         if self.x >= self.x_max or self.x <= self.x_min:
             self.h_speed = -self.h_speed
             self.y -= self.v_speed
+        if len(alien_bullets) < MAX_ALIEN_BULLETS and randrange(10000) < self.data['shoot_chance']:
+            alien_bullets.append(Bullet(BULLET_SPEED, self.data['bullet'], (self.x, self.y)))
 
-aliens = []
 for n, t in enumerate(ALIEN_ROWS):
   for i in range(ALIEN_ROW_LENGTH):
       aliens.append(
@@ -91,6 +99,8 @@ def draw():
     # Bullets
     for bullet in bullets:
         bullet.draw()
+    for bullet in alien_bullets:
+        bullet.draw()
 
     screen.draw.text("Score: %d" % ship.score, (SCORE_POS))
 
@@ -102,6 +112,7 @@ def update():
 
     aliens_to_remove = []
     bullets_to_remove = []
+    alien_bullets_to_remove = []
     for a, alien in enumerate(aliens):
         alien.move()
         for b, bullet in enumerate(bullets):
@@ -114,10 +125,17 @@ def update():
         if bullet.y < 0:
             bullets_to_remove.append(i)
 
+    for i, bullet in enumerate(alien_bullets):
+        bullet.move()
+        if bullet.y > HEIGHT:
+            alien_bullets_to_remove.append(i)
+
     for i in reversed(aliens_to_remove):
         del aliens[i]
     for i in reversed(bullets_to_remove):
         del bullets[i]
+    for i in reversed(alien_bullets_to_remove):
+        del alien_bullets[i]
 
 def on_key_down(key):
     if key == keys.SPACE and len(bullets) < MAX_BULLETS:
