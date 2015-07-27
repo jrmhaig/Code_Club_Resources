@@ -11,25 +11,33 @@ class Alien(Actor):
         super(Alien, self).__init__(image, pos, anchor)
         self.x_min = x_min
         self.x_max = x_max
-        self.speed = 1
+        self.h_speed = 1
+        self.v_speed = -1
 
     def move(self):
-        self.x += self.speed
+        self.x += self.h_speed
         if self.x >= self.x_max or self.x <= self.x_min:
-            self.speed = -self.speed
+            self.h_speed = -self.h_speed
+            self.y -= self.v_speed
 
 ALIEN_ROW_LENGTH = 10
+ALIEN_ROWS = 4
 ALIEN_TOP = ( 5 * HEIGHT ) / 100
 ALIEN_ROW_LEFT = (5 * WIDTH) / 100
 ALIEN_ROW_RIGHT = (95 * WIDTH) / 100
-ALIEN_SPACE = ( 7 * WIDTH ) / 100
+ALIEN_H_SPACE = ( 7 * WIDTH ) / 100
+ALIEN_V_SPACE = ( 7 * HEIGHT ) / 100
 aliens = []
-for i in range(ALIEN_ROW_LENGTH):
-    aliens.append(Alien('alien1',
-        ( ALIEN_ROW_LEFT + ALIEN_SPACE * i, ALIEN_TOP ),
-        ALIEN_ROW_LEFT, ALIEN_ROW_RIGHT))
-
-#alien1 = Alien('alien1', (100, 100), 100, 500)
+for n in range(ALIEN_ROWS):
+  for i in range(ALIEN_ROW_LENGTH):
+      aliens.append(
+          Alien(
+              'alien%d' % (n+1),
+              (
+                  ALIEN_ROW_LEFT + ALIEN_H_SPACE * i,
+                  ALIEN_TOP + ALIEN_V_SPACE * n),
+              ALIEN_ROW_LEFT + ALIEN_H_SPACE * i,
+              ALIEN_ROW_RIGHT - ALIEN_H_SPACE * (ALIEN_ROW_LENGTH - (i + 1))))
 
 def draw():
     screen.clear()
