@@ -37,7 +37,7 @@ BULLET_SPEED = 3
 # Maximum number of bullets on the screen
 MAX_BULLETS = 5
 
-ship = Actor('ship', x_percent(50), y_percent(95))
+ship = Actor('ship', (x_percent(50), y_percent(95)))
 ship.speed = 5
 ship.x_min = x_percent(5)
 ship.x_max = y_percent(95)
