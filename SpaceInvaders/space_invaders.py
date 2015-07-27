@@ -2,6 +2,12 @@
 WIDTH = 800
 HEIGHT = 600
 
+def x_percent(x):
+    return (x * WIDTH) / 100
+
+def y_percent(y):
+    return (y * HEIGHT) / 100
+
 # Data on the aliens
 ALIEN_DATA = [
     { 'image': 'alien1', 'bullet': 'alien1-bullet' },
@@ -13,28 +19,28 @@ ALIEN_ROW_LENGTH = 10
 # Alien types in each row (top to bottom)
 ALIEN_ROWS = [ 1, 2, 2, 3, 3 ]
 # Starting top position of the top row of aliens
-ALIEN_TOP = ( 15 * HEIGHT ) / 100
+ALIEN_TOP = y_percent(15)
 # Furthest left position of the left most alien
-ALIEN_ROW_LEFT = (5 * WIDTH) / 100
+ALIEN_ROW_LEFT = x_percent(5)
 # Furthest right position of the right most alien
-ALIEN_ROW_RIGHT = (95 * WIDTH) / 100
+ALIEN_ROW_RIGHT = x_percent(95)
 # Horizontal spacing of the aliens
-ALIEN_H_SPACE = ( 7 * WIDTH ) / 100
+ALIEN_H_SPACE = x_percent(7)
 # Vertical spacing of the aliens
-ALIEN_V_SPACE = ( 7 * HEIGHT ) / 100
+ALIEN_V_SPACE = y_percent(7)
 
 # Position of the score
-SCORE_POS = (2 * WIDTH) / 100, (2 * HEIGHT) / 100
+SCORE_POS = x_percent(2), y_percent(2)
 
 # Speed of the bullets
 BULLET_SPEED = 3
 # Maximum number of bullets on the screen
 MAX_BULLETS = 5
 
-ship = Actor('ship', (WIDTH / 2, (95 * HEIGHT) / 100 ))
+ship = Actor('ship', x_percent(50), y_percent(95))
 ship.speed = 5
-ship.x_min = (5 * WIDTH) / 100
-ship.x_max = (95 * WIDTH) / 100
+ship.x_min = x_percent(5)
+ship.x_max = y_percent(95)
 
 class Bullet(Actor):
     def __init__(self, speed, *args, **kwargs):
