@@ -1,13 +1,16 @@
 from random import randrange
+import time
 
 # Size of the screen
 WIDTH = 800
 HEIGHT = 600
 
 def x_percent(x):
+    """ Find x position or length as a percentage of the screen width """
     return (x * WIDTH) / 100
 
 def y_percent(y):
+    """ Find y position or length as a percentage of the screen height """
     return (y * HEIGHT) / 100
 
 # Data on the aliens
@@ -41,11 +44,6 @@ MAX_BULLETS = 5
 # Maximum number of alien bullets
 MAX_ALIEN_BULLETS = 10
 
-ship = Actor('ship', (x_percent(50), y_percent(95)))
-ship.speed = 5
-ship.x_min = x_percent(5)
-ship.x_max = x_percent(95)
-
 class Bullet(Actor):
     def __init__(self, speed, *args, **kwargs):
         super(Bullet, self).__init__(*args, **kwargs)
@@ -54,8 +52,6 @@ class Bullet(Actor):
     def move(self):
         self.y += self.speed
 
-aliens = []
-alien_bullets = []
 class Alien(Actor):
     def __init__(self, alien_type, pos, x_min, x_max, anchor=('center', 'center')):
         super(Alien, self).__init__(ALIEN_DATA[alien_type]['image'], pos, anchor)
@@ -71,12 +67,26 @@ class Alien(Actor):
         if self.x >= self.x_max or self.x <= self.x_min:
             self.h_speed = -self.h_speed
             self.y -= self.v_speed
-        if len(alien_bullets) < MAX_ALIEN_BULLETS and randrange(10000) < self.data['shoot_chance']:
-            alien_bullets.append(Bullet(BULLET_SPEED, self.data['bullet'], (self.x, self.y)))
+        if state['ship'] and len(state['alien_bullets']) < MAX_ALIEN_BULLETS and randrange(10000) < self.data['shoot_chance']:
+            state['alien_bullets'].append(Bullet(BULLET_SPEED, self.data['bullet'], (self.x, self.y)))
+
+state = {
+    'score': 0,
+    'next_ship_start': time.time(),
+    'lives': [
+        Actor('ship', (x_percent(50), y_percent(85))),
+        Actor('ship', (x_percent(10), y_percent(95))),
+        Actor('ship', (x_percent(5), y_percent(95)))
+    ],
+    'ship': None,
+    'bullets': [],
+    'aliens': [],
+    'alien_bullets': []
+}
 
 for n, t in enumerate(ALIEN_ROWS):
   for i in range(ALIEN_ROW_LENGTH):
-      aliens.append(
+      state['aliens'].append(
           Alien(
               t,
               (
@@ -85,58 +95,82 @@ for n, t in enumerate(ALIEN_ROWS):
               ALIEN_ROW_LEFT + ALIEN_H_SPACE * i,
               ALIEN_ROW_RIGHT - ALIEN_H_SPACE * (ALIEN_ROW_LENGTH - (i + 1))))
 
-bullets = []
-ship.score = 0
-
 def draw():
     screen.clear()
-    ship.draw()
+    for s in state['lives']:
+        s.draw()
 
     # Aliens
-    for alien in aliens:
+    for alien in state['aliens']:
         alien.draw()
 
     # Bullets
-    for bullet in bullets:
+    for bullet in state['bullets']:
         bullet.draw()
-    for bullet in alien_bullets:
+    for bullet in state['alien_bullets']:
         bullet.draw()
 
-    screen.draw.text("Score: %d" % ship.score, (SCORE_POS))
+    screen.draw.text("Score: %d" % state['score'], (SCORE_POS))
+
+def next_ship():
+    """ Get the next ship """
+    state['ship'] = state['lives'][0]
+    state['ship'].speed = 5
+    state['ship'].x = x_percent(50)
+    state['ship'].y = y_percent(88)
+    state['ship'].x_min = x_percent(5)
+    state['ship'].x_max = x_percent(95)
 
 def update():
-    if keyboard.LEFT and ship.x > ship.x_min:
-        ship.x -= ship.speed
-    if keyboard.RIGHT and ship.x < ship.x_max:
-        ship.x += ship.speed
+    if state['ship']:
+        if keyboard.LEFT and state['ship'].x > state['ship'].x_min:
+            state['ship'].x -= state['ship'].speed
+        if keyboard.RIGHT and state['ship'].x < state['ship'].x_max:
+            state['ship'].x += state['ship'].speed
+    elif time.time() > state['next_ship_start']:
+        next_ship()
 
     aliens_to_remove = []
     bullets_to_remove = []
     alien_bullets_to_remove = []
-    for a, alien in enumerate(aliens):
+
+    # Move the aliens and detect if they have been hit
+    for a, alien in enumerate(state['aliens']):
         alien.move()
-        for b, bullet in enumerate(bullets):
+        for b, bullet in enumerate(state['bullets']):
             if alien.colliderect(bullet):
-                ship.score += alien.score
+                state['score'] += alien.score
                 aliens_to_remove.append(a)
                 bullets_to_remove.append(b)
-    for i, bullet in enumerate(bullets):
+    # Move the bullets fired by the player
+    for i, bullet in enumerate(state['bullets']):
         bullet.move()
         if bullet.y < 0:
             bullets_to_remove.append(i)
 
-    for i, bullet in enumerate(alien_bullets):
+    # Move the bullets fired by the aliens
+    for i, bullet in enumerate(state['alien_bullets']):
         bullet.move()
+        if state['ship'] and bullet.colliderect(state['ship']):
+            sounds.explosion.play()
+            state['ship'] = None
+            del state['lives'][0]
+            state['next_ship_start'] = time.time() + 3
+            if len(state['lives']) == 0:
+                # Game over
+                exit()
         if bullet.y > HEIGHT:
             alien_bullets_to_remove.append(i)
 
+    # Remove dead aliens and bullets
     for i in reversed(aliens_to_remove):
-        del aliens[i]
+        del state['aliens'][i]
     for i in reversed(bullets_to_remove):
-        del bullets[i]
+        del state['bullets'][i]
     for i in reversed(alien_bullets_to_remove):
-        del alien_bullets[i]
+        del state['alien_bullets'][i]
 
 def on_key_down(key):
-    if key == keys.SPACE and len(bullets) < MAX_BULLETS:
-        bullets.append(Bullet(-BULLET_SPEED, 'bullet', (ship.x, ship.y)))
+    if state['ship'] and key == keys.SPACE and len(state['bullets']) < MAX_BULLETS:
+        sounds.shoot.play()
+        state['bullets'].append(Bullet(-BULLET_SPEED, 'bullet', (state['ship'].x, state['ship'].y)))
