@@ -5,6 +5,8 @@ import time
 WIDTH = 800
 HEIGHT = 600
 
+BACKGROUND = (100, 100, 100)
+
 def x_percent(x):
     """ Find x position or length as a percentage of the screen width """
     return (x * WIDTH) / 100
@@ -97,6 +99,7 @@ for n, t in enumerate(ALIEN_ROWS):
 
 def draw():
     screen.clear()
+    screen.fill(BACKGROUND)
     for s in state['lives']:
         s.draw()
 
@@ -165,9 +168,9 @@ def update():
     # Remove dead aliens and bullets
     for i in reversed(aliens_to_remove):
         del state['aliens'][i]
-    for i in reversed(bullets_to_remove):
+    for i in sorted(bullets_to_remove, reverse=True):
         del state['bullets'][i]
-    for i in reversed(alien_bullets_to_remove):
+    for i in sorted(alien_bullets_to_remove, reverse=True):
         del state['alien_bullets'][i]
 
 def on_key_down(key):
