@@ -58,7 +58,7 @@ class Bullet(Actor):
         self.y += self.speed
 
 class Alien(Actor):
-    def __init__(self, alien_type, pos, x_min, x_max, anchor=('center', 'center')):
+    def __init__(self, alien_type, speed, pos, x_min, x_max, anchor=('center', 'center')):
         super(Alien, self).__init__(ALIEN_DATA[alien_type]['image'], pos, anchor)
 
         # 'Home' position of alien, when in formation
@@ -74,8 +74,8 @@ class Alien(Actor):
         # Speed when in formation
         #   Horizontal - steps across per call to 'update'
         #   Vertial - steps down when changing direction
-        self.h_speed = 1
-        self.v_speed = 1
+        self.h_speed = speed
+        self.v_speed = speed
 
         self.data = ALIEN_DATA[alien_type]
         self.score = ALIEN_DATA[alien_type]['score']
@@ -128,17 +128,30 @@ class Game:
         self.bullets = [] # Player's bullets on the screen
         self.aliens = [] # Aliens on the screen
         self.alien_bullets = [] # Aliens' bullets on the screen
+        self.level = 0
+        self.start_level()
 
+    def start_level(self):
+        self.level += 1
         for n, t in enumerate(ALIEN_ROWS):
             for i in range(ALIEN_ROW_LENGTH):
                 self.aliens.append(
                     Alien(
-                        t,
+                        t, self.level,
                         (
                             ALIEN_ROW_LEFT + ALIEN_H_SPACE * i,
                             ALIEN_TOP + ALIEN_V_SPACE * n),
                         ALIEN_ROW_LEFT + ALIEN_H_SPACE * i,
                         ALIEN_ROW_RIGHT - ALIEN_H_SPACE * (ALIEN_ROW_LENGTH - (i + 1))))
+
+    def next_ship(self):
+        """ Get the next ship """
+        self.ship = self.lives[0]
+        self.ship.speed = 5
+        self.ship.x = x_percent(50)
+        self.ship.y = y_percent(88)
+        self.ship.x_min = x_percent(5)
+        self.ship.x_max = x_percent(95)
 
 game = Game()
 
@@ -157,15 +170,6 @@ def draw():
 
     screen.draw.text("Score: %d" % game.score, (SCORE_POS))
 
-def next_ship():
-    """ Get the next ship """
-    game.ship = game.lives[0]
-    game.ship.speed = 5
-    game.ship.x = x_percent(50)
-    game.ship.y = y_percent(88)
-    game.ship.x_min = x_percent(5)
-    game.ship.x_max = x_percent(95)
-
 def update():
     if game.ship:
         if keyboard.LEFT and game.ship.x > game.ship.x_min:
@@ -173,7 +177,7 @@ def update():
         if keyboard.RIGHT and game.ship.x < game.ship.x_max:
             game.ship.x += game.ship.speed
     elif time.time() > game.next_ship_start:
-        next_ship()
+        game.next_ship()
 
     aliens_to_remove = []
     bullets_to_remove = []
@@ -223,6 +227,10 @@ def update():
         del game.bullets[i]
     for i in sorted(alien_bullets_to_remove, reverse=True):
         del game.alien_bullets[i]
+
+    # All aliens destroyed. Next level
+    if len(game.aliens) == 0:
+        game.start_level()
 
 def on_key_down(key):
     if game.ship and key == keys.SPACE and len(game.bullets) < MAX_BULLETS:
