@@ -15,6 +15,9 @@ def y_percent(y):
     """ Find y position or length as a percentage of the screen height """
     return (y * HEIGHT) / 100
 
+def chance(prob):
+    return randrange(prob[1]) < prob[0]
+
 # Data on the aliens
 ALIEN_DATA = [
     { 'image': 'alien1', 'bullet': 'alien1-bullet' },
@@ -57,20 +60,56 @@ class Bullet(Actor):
 class Alien(Actor):
     def __init__(self, alien_type, pos, x_min, x_max, anchor=('center', 'center')):
         super(Alien, self).__init__(ALIEN_DATA[alien_type]['image'], pos, anchor)
+
+        # 'Home' position of alien, when in formation
+        self.home_x = self.x
+        self.home_y = self.y
+        self.diving = False
+        self.diving_chance = [1, 10000]
+
+        # Limits of alien's horizontal motion
         self.x_min = x_min
         self.x_max = x_max
+
+        # Speed when in formation
+        #   Horizontal - steps across per call to 'update'
+        #   Vertial - steps down when changing direction
         self.h_speed = 1
-        self.v_speed = -1
+        self.v_speed = 1
+
         self.data = ALIEN_DATA[alien_type]
         self.score = ALIEN_DATA[alien_type]['score']
 
     def move(self):
-        self.x += self.h_speed
-        if self.x >= self.x_max or self.x <= self.x_min:
+        # Keep track of home position
+        self.home_x += self.h_speed
+        if self.home_x >= self.x_max or self.home_x <= self.x_min:
             self.h_speed = -self.h_speed
-            self.y -= self.v_speed
-        if state['ship'] and len(state['alien_bullets']) < MAX_ALIEN_BULLETS and randrange(10000) < self.data['shoot_chance']:
-            state['alien_bullets'].append(Bullet(BULLET_SPEED, self.data['bullet'], (self.x, self.y)))
+            self.home_y += self.v_speed
+
+        if self.diving:
+            self.y += self.v_speed
+            if state['ship']:
+                if self.x > state['ship'].x:
+                    self.x -= 1
+                else:
+                    self.x += 1
+            if self.y > HEIGHT:
+                self.diving = False
+        else:
+            # 'Special' actions only if the ship is in play
+            if state['ship']:
+                # Fire bullets if;
+                #       * There are not too many alien bullets
+                #       * With probability determined by self.data['shoot_chance']
+                if len(state['alien_bullets']) < MAX_ALIEN_BULLETS and randrange(10000) < self.data['shoot_chance']:
+                    state['alien_bullets'].append(Bullet(BULLET_SPEED, self.data['bullet'], (self.x, self.y)))
+                elif chance(self.diving_chance):
+                    self.diving = True
+
+            self.x = self.home_x
+            self.y = self.home_y
+
 
 state = {
     'score': 0,
@@ -100,19 +139,9 @@ for n, t in enumerate(ALIEN_ROWS):
 def draw():
     screen.clear()
     screen.fill(BACKGROUND)
-    for s in state['lives']:
-        s.draw()
-
-    # Aliens
-    for alien in state['aliens']:
-        alien.draw()
-
-    # Bullets
-    for bullet in state['bullets']:
-        bullet.draw()
-    for bullet in state['alien_bullets']:
-        bullet.draw()
-
+    for group in ['lives', 'aliens', 'bullets', 'alien_bullets']:
+        for actor in state[group]:
+            actor.draw()
     screen.draw.text("Score: %d" % state['score'], (SCORE_POS))
 
 def next_ship():
@@ -140,6 +169,15 @@ def update():
     # Move the aliens and detect if they have been hit
     for a, alien in enumerate(state['aliens']):
         alien.move()
+        if state['ship'] and alien.colliderect(state['ship']):
+            aliens_to_remove.append(a)
+            sounds.explosion.play()
+            state['ship'] = None
+            del state['lives'][0]
+            state['next_ship_start'] = time.time() + 3
+            if len(state['lives']) == 0:
+                # Game over
+                exit()
         for b, bullet in enumerate(state['bullets']):
             if alien.colliderect(bullet):
                 state['score'] += alien.score

@@ -12,11 +12,7 @@ pgzrun space_invaders.py
 
 ## To do
 
-* Aliens firing back and hitting
-* Sound effects
 * 'Mystery ship' (alien1.png)
-* Dive boming aliens
-* Three lives (displayed and detecting game over)
 * Base shelters
 * Refresh screen after levels
 
