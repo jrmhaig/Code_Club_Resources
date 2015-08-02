@@ -109,10 +109,15 @@ class Alien(Actor):
 
             self.x = self.home_x
             self.y = self.home_y
+            if self.y > HEIGHT:
+                # Alien has reached the bottom.
+                game.game_over()
 
 class Game:
     """ Holds main game data """
     def __init__(self):
+        self.start_message = "Press ENTER to start"
+        self.game_on = False
         self.reset() # Start the game with a fresh landscape and ship
 
     def reset(self):
@@ -121,7 +126,7 @@ class Game:
         self.next_ship_start = time.time() # Time for the next ship to start
         self.lives = [
             Actor('ship', (x_percent(50), y_percent(85))),
-            Actor('ship', (x_percent(10), y_percent(95))),
+            Actor('ship', (x_percent(12), y_percent(95))),
             Actor('ship', (x_percent(5), y_percent(95)))
         ] # Players lives
         self.ship = None # Current ship
@@ -153,86 +158,97 @@ class Game:
         self.ship.x_min = x_percent(5)
         self.ship.x_max = x_percent(95)
 
+    def lose_life(self):
+        sounds.explosion.play()
+        self.ship = None
+        del self.lives[0]
+        self.next_ship_start = time.time() + 3
+        if len(self.lives) == 0:
+            self.game_over()
+
+    def game_over(self):
+        self.start_message = "GAME OVER\n\nScore:" + str(self.score) + "\n\nPress ENTER to start"
+        self.game_on = False
+
 game = Game()
 
 def draw():
     screen.clear()
     screen.fill(BACKGROUND)
 
-    for l in game.lives:
-        l.draw()
-    for a in game.aliens:
-        a.draw()
-    for ab in game.alien_bullets:
-        ab.draw()
-    for b in game.bullets:
-        b.draw()
+    if game.game_on:
+        for l in game.lives:
+            l.draw()
+        for a in game.aliens:
+            a.draw()
+        for ab in game.alien_bullets:
+            ab.draw()
+        for b in game.bullets:
+            b.draw()
 
-    screen.draw.text("Score: %d" % game.score, (SCORE_POS))
+        screen.draw.text("Score: %d" % game.score, (SCORE_POS))
+    else:
+        screen.draw.text(game.start_message, center=(WIDTH/2, HEIGHT/5), align="center")
 
 def update():
-    if game.ship:
-        if keyboard.LEFT and game.ship.x > game.ship.x_min:
-            game.ship.x -= game.ship.speed
-        if keyboard.RIGHT and game.ship.x < game.ship.x_max:
-            game.ship.x += game.ship.speed
-    elif time.time() > game.next_ship_start:
-        game.next_ship()
+    if game.game_on:
+        if game.ship:
+            if keyboard.LEFT and game.ship.x > game.ship.x_min:
+                game.ship.x -= game.ship.speed
+            if keyboard.RIGHT and game.ship.x < game.ship.x_max:
+                game.ship.x += game.ship.speed
+        elif time.time() > game.next_ship_start:
+            game.next_ship()
 
-    aliens_to_remove = []
-    bullets_to_remove = []
-    alien_bullets_to_remove = []
+        aliens_to_remove = []
+        bullets_to_remove = []
+        alien_bullets_to_remove = []
 
-    # Move the aliens and detect if they have been hit
-    for a, alien in enumerate(game.aliens):
-        alien.move()
-        if game.ship and alien.colliderect(game.ship):
-            aliens_to_remove.append(a)
-            sounds.explosion.play()
-            game.ship = None
-            del game.lives[0]
-            game.next_ship_start = time.time() + 3
-            if len(game.lives) == 0:
-                # Game over
-                exit()
-        for b, bullet in enumerate(game.bullets):
-            if alien.colliderect(bullet):
-                game.score += alien.score
+        # Move the aliens and detect if they have been hit
+        for a, alien in enumerate(game.aliens):
+            alien.move()
+            if game.ship and alien.colliderect(game.ship):
                 aliens_to_remove.append(a)
-                bullets_to_remove.append(b)
-    # Move the bullets fired by the player
-    for i, bullet in enumerate(game.bullets):
-        bullet.move()
-        if bullet.y < 0:
-            bullets_to_remove.append(i)
+                game.lose_life()
+            for b, bullet in enumerate(game.bullets):
+                if alien.colliderect(bullet):
+                    game.score += alien.score
+                    aliens_to_remove.append(a)
+                    bullets_to_remove.append(b)
+        # Move the bullets fired by the player
+        for i, bullet in enumerate(game.bullets):
+            bullet.move()
+            if bullet.y < 0:
+                bullets_to_remove.append(i)
 
-    # Move the bullets fired by the aliens
-    for i, bullet in enumerate(game.alien_bullets):
-        bullet.move()
-        if game.ship and bullet.colliderect(game.ship):
-            sounds.explosion.play()
-            game.ship = None
-            del game.lives[0]
-            game.next_ship_start = time.time() + 3
-            if len(game.lives) == 0:
-                # Game over
-                exit()
-        if bullet.y > HEIGHT:
-            alien_bullets_to_remove.append(i)
+        # Move the bullets fired by the aliens
+        for i, bullet in enumerate(game.alien_bullets):
+            bullet.move()
+            if game.ship and bullet.colliderect(game.ship):
+                game.lose_life()
+            if bullet.y > HEIGHT:
+                alien_bullets_to_remove.append(i)
 
-    # Remove dead aliens and bullets
-    for i in reversed(aliens_to_remove):
-        del game.aliens[i]
-    for i in sorted(bullets_to_remove, reverse=True):
-        del game.bullets[i]
-    for i in sorted(alien_bullets_to_remove, reverse=True):
-        del game.alien_bullets[i]
+        # Remove dead aliens and bullets
+        for i in reversed(aliens_to_remove):
+            del game.aliens[i]
+        for i in sorted(bullets_to_remove, reverse=True):
+            print(game.bullets)
+            print(bullets_to_remove)
+            del game.bullets[i]
+        for i in sorted(alien_bullets_to_remove, reverse=True):
+            del game.alien_bullets[i]
 
-    # All aliens destroyed. Next level
-    if len(game.aliens) == 0:
-        game.start_level()
+        # All aliens destroyed. Next level
+        if len(game.aliens) == 0:
+            game.start_level()
 
 def on_key_down(key):
-    if game.ship and key == keys.SPACE and len(game.bullets) < MAX_BULLETS:
-        sounds.shoot.play()
-        game.bullets.append(Bullet(-BULLET_SPEED, 'bullet', (game.ship.x, game.ship.y)))
+    if game.game_on:
+        if game.ship and key == keys.SPACE and len(game.bullets) < MAX_BULLETS:
+            sounds.shoot.play()
+            game.bullets.append(Bullet(-BULLET_SPEED, 'bullet', (game.ship.x, game.ship.y)))
+    else:
+        if key == keys.RETURN:
+            game.game_on = True
+            game.reset()
