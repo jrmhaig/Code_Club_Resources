@@ -21,9 +21,9 @@ def chance(prob):
 # Data on the aliens
 ALIEN_DATA = [
     { 'image': 'alien1', 'bullet': 'alien1-bullet' },
-    { 'image': 'alien2', 'bullet': 'alien2-bullet', 'shoot_chance': 1, 'score': 30 },
-    { 'image': 'alien3', 'bullet': 'alien3-bullet', 'shoot_chance': 1, 'score': 20 },
-    { 'image': 'alien4', 'bullet': 'alien4-bullet', 'shoot_chance': 1, 'score': 10 }]
+    { 'image': 'alien2', 'bullet': 'alien2-bullet', 'shoot_chance': [1, 10000], 'score': 30 },
+    { 'image': 'alien3', 'bullet': 'alien3-bullet', 'shoot_chance': [1, 10000], 'score': 20 },
+    { 'image': 'alien4', 'bullet': 'alien4-bullet', 'shoot_chance': [1, 10000], 'score': 10 }]
 # Number of aliens in a row
 ALIEN_ROW_LENGTH = 10
 # Alien types in each row (top to bottom)
@@ -102,7 +102,7 @@ class Alien(Actor):
                 # Fire bullets if;
                 #       * There are not too many alien bullets
                 #       * With probability determined by self.data['shoot_chance']
-                if len(game.alien_bullets) < MAX_ALIEN_BULLETS and randrange(10000) < self.data['shoot_chance']:
+                if len(game.alien_bullets) < MAX_ALIEN_BULLETS and chance(self.data['shoot_chance']):
                     game.alien_bullets.append(Bullet(BULLET_SPEED, self.data['bullet'], (self.x, self.y)))
                 elif chance(self.diving_chance):
                     self.diving = True
