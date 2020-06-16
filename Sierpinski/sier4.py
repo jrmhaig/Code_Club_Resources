@@ -6,25 +6,25 @@ from random import randrange
 # Note, comment (or remove) print statements or it will be slow
 
 def randpoint():
-    return [ randrange(401)-200, randrange(401)-200 ]
+    return ( randrange(401)-200, randrange(401)-200 )
 
 penup()
 speed(11)
 
-corners = [ randpoint(), randpoint(), randpoint() ]
+corners = ( randpoint(), randpoint(), randpoint() )
 
 for i in range(1000):
     n = randrange(3)
     point = corners[n]
     
-    angle = towards(point[0], point[1])
+    angle = towards(point)
     #print("Angle to point is " + str(angle) + " degrees")
 
     #print("Turning towards that point ...")
 
     setheading(angle)
 
-    dist = distance( point[0], point[1] )
+    dist = distance( point )
 
     #print("Distance from turtle to point: " + str(dist))
 

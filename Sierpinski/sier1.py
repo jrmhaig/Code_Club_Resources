@@ -9,9 +9,9 @@ from turtle import *
 # New syntax:
 #   array variables
 
-point = [ 100, 100 ]
+point = ( 100, 100 )
 
-angle = towards(point[0], point[1])
+angle = towards(point)
 print("Angle to point is " + str(angle) + " degrees")
 
 print("Turning towards that point ...")

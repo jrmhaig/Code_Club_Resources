@@ -7,17 +7,17 @@ from turtle import *
 
 penup()
 
-point = [ 100, 100 ]
+point = ( 100, 100 )
 
 for i in range(10):
-    angle = towards(point[0], point[1])
+    angle = towards(point)
     print("Angle to point is " + str(angle) + " degrees")
 
     print("Turning towards that point ...")
 
     setheading(angle)
 
-    dist = distance(point[0], point[1])
+    dist = distance(point)
 
     print("Distance from turtle to point: " + str(dist))
 
