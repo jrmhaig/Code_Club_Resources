@@ -1,37 +1,25 @@
-## Welcome to GitHub Pages
+This repository contains a collection of things I have created whilst running various [Code Clubs](https://www.codeclubs.org.uk) over the years. You are welcome to use them if you find them helpful and feedback is always most welcome.
 
-You can use the [editor on GitHub](https://github.com/jrmhaig/Code_Club_Resources/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+## Progress Booklets
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+A 4 page A5 booklet to help children in a club to track their progress as they work through the three Scratch modules on the [Code Club projects page.](https://projects.raspberrypi.org/en/codeclub) They are correct as of the end of 2021.
 
-### Markdown
+Download the PDF [here](https://github.com/jrmhaig/Code_Club_Resources/raw/master/ProgressBooklets/ScratchProgress.pdf).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Reaction
 
-```markdown
-Syntax highlighted code block
+A simple reaction game using electronics with a Raspberry Pi. This project is nearly 10 years old now so it will almost certainly need updating, not least because it uses Python 2. It has been copied and updated in various places including [here.](https://projects.raspberrypi.org/en/projects/python-quick-reaction-game)
 
-# Header 1
-## Header 2
-### Header 3
+## Sierpinski
 
-- Bulleted
-- List
+An interactive project to create a [Sierpiński triangle](https://en.wikipedia.org/wiki/Sierpiński_triangle) in Python. The code samples are intended as a guide for the teacher to explain each step and the students are expected to already have some experience with Python and the Turtle graphics module.
 
-1. Numbered
-2. List
+Find the code [here.](https://github.com/jrmhaig/Code_Club_Resources/tree/master/Sierpinski)
 
-**Bold** and _Italic_ and `Code` text
+## Space Invaders
 
-[Link](url) and ![Image](src)
-```
+A worksheet for building the classic Space Invaders game using PyGame. I have no idea what state this is in now. _Caveat emptor._
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## Turtle Intro
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jrmhaig/Code_Club_Resources/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+My first venture into Python with 11-year-olds. I don't know how helpful it is now and it possibly contains a [copyright infringement.](https://en.wikipedia.org/wiki/Touch%C3%A9_Turtle_and_Dum_Dum)
