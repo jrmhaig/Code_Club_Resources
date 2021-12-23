@@ -1,4 +1,4 @@
-This repository contains a collection of things I have created whilst running various [Code Clubs](https://www.codeclubs.org.uk) over the years. You are welcome to use them if you find them helpful and feedback is always most welcome.
+This repository contains a collection of things I have created whilst running various [Code Clubs](https://www.codeclub.org.uk) over the years. You are welcome to use them if you find them helpful and feedback is always most welcome.
 
 ## Progress Booklets
 
