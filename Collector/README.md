@@ -155,13 +155,14 @@ def update():
     if player.colliderect(gem):
         sounds.laser_large_1.play()
         gem.image = choice(GEMS)
-        gems.pos = (randrange(0, WIDTH), randrange(0, HEIGHT))
+        gem.pos = (randrange(0, WIDTH), randrange(0, HEIGHT))
 
 ```
 
 ## Add a score and a time limit
 
-At the top of your code, after creating the `player` and `gem` sprites, make two**variables**;
+At the top of your code, after creating the `player` and `gem` sprites, make two
+**variables**;
 
 ```python
 score = 0
@@ -171,7 +172,7 @@ timer = 30
 These are going to keep track of the score the player has and how much time
 there is remaining.
 
-> ![NOTE]
+> [!NOTE]
 > `score` and `timer` are named with lower case letters. This indicates that
 > they are *variables*, meaning that they can change as the program runs.
 > Compare this with `WIDTH`, `HEIGHT` and `GEMS`. These are called *constants*
@@ -214,7 +215,7 @@ have two arguments for the text to display, `"Time: " + str(timer)`, and the
 position, `(10, 10)`. It can also optionally have some other arguments to
 affect how the text appears, such as `color="white"`.
 
-> ![NOTE]
+> [!NOTE]
 > The optional arguments appear as `key=value` where `key` is what your are
 > setting (`color` in this case - note the American spelling) and `value` is
 > what you want to set it to (`"white"` in this case).
@@ -233,7 +234,7 @@ the player catches the gem add `score += 1` to add 1 to the score. Then in the
 timer is displayed. This will not need to use `round` as it will always be a
 round number.
 
-> ![NOTE]
+> [!NOTE]
 > A number like `29.933333`, with a decimal point, is called a *floating
 > point number* or a *float*. These are used for data like distance and
 > temperature, which are not normally exact whole numbers.
@@ -255,16 +256,20 @@ def draw():
 
     if timer > 0:
         # Game is being played
+        # All your existing code goes here
     else:
         # Game has finished
+        pass
 
 def update():
     global score, timer
 
     if timer > 0:
         # Game is being played
+        # All your existing code goes here
     else:
         # Game has finished
+        pass
 ```
 
 To start, Add the `if timer > 0:` to both your `draw` and `update` functions and
@@ -272,9 +277,18 @@ indent the rest of the contents of these functions, so they are inside this
 `if`. Make sure that the `global` line and the `screen.clear()` line in `draw`
 are not included in this.
 
-> ![NOTE]
+> [!NOTE]
 > In Thonny if you select several lines and press the 'Tab' key then all the
-> lines will indent.
+> lines will indent. To reverse this (i.e. to remove an indent) you can press
+> 'Shift' and 'Tab' together. This is useful if you need to add an `if` around
+> several lines of code.
+
+> [!NOTE]
+> Python doesn't like blocks that contain nothing, and a comment (a line
+> starting with a `#`) counts as nothing. The `else` part of the `if` in the
+> code above is not complete yet so there is nothing in it. Python has a special
+> command `pass` that does nothing allows incomplete code like this to run. This
+> `pass` can be removed when you add something later.
 
 Test the game now and check that everything stops when the time runs out.
 
@@ -293,13 +307,24 @@ def draw():
         # Display end of game message
 ```
 
+## Other things to try
+
+* You may notice that gems can appear on top of the timer and score, and you can
+  also run the player spriter over it. How can you stop this from happening?
+* When the game has finished, how can you make it start again by pressing a key,
+  such as the space bar?
+* Can you add another player so you can play against a friend? Hint; you can
+  test if the 'A' key is pressed with `keyboard[keys.A]`.
+* (More difficult) Can you make the gems move around randomly to make it more
+  difficult? Make sure that the gem doesn't wander off the screen!
+
 ## References
 
-Gem images from the [Platformer Characters Pack](https://kenney.nl/assets/simplified-platformers-pack)
-and player images from the [Scribble Dungeons](https://kenney.nl/assets/scribble-dungeons)
+Gem images are from the [Platformer Characters Pack](https://kenney.nl/assets/simplified-platformers-pack)
+and player images are from the [Scribble Dungeons](https://kenney.nl/assets/scribble-dungeons)
 on [Kenney](https://kenney.nl). The licences for the images can be found
 [here](images/Scribble-Dungeons-License.txt) and [here.](images/Simplified-Platformer-License.txt)
 
-Sound files from [Sci-fi Sounds](https://kenney.nl/assets/sci-fi-sounds)
+Sound files are from [Sci-fi Sounds](https://kenney.nl/assets/sci-fi-sounds)
 on [Kenney](https://kenney.nl). The licences for the images can be found
 [here.](sounds/License.txt)
