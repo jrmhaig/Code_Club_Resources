@@ -1,0 +1,12 @@
+when green flag clicked
+set size to (45) %
+set rotation style [left-right v]
+point in direction (-90)
+set [score v] to (0)
+go to x: (pick random (0) to (240)) y: (pick random (-180) to (0))
+forever
+  if <touching (Snowball v)?> then
+    change [score v] by (1)
+	go to x: (pick random (0) to (240)) y: (pick random (-180) to (0))
+  end
+end

@@ -1,0 +1,6 @@
+when green flag clicked
+go to x: (-200) y: (140)
+go to [back v] layer
++ forever
+  point towards [mouse-pointer v]
++ end

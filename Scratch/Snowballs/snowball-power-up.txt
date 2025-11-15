@@ -1,0 +1,5 @@
+when [space v] key pressed
+set [power v] to (0)
+repeat until <not <key [space v] pressed?>>
+  change [power v] by (1)
+end

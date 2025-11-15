@@ -1,0 +1,15 @@
+when [space v] key pressed
+set [power v] to (0)
+repeat until <not <key [space v] pressed?>>
++  if <(power) < (25)> then
+    change [power v] by (1)
++  end
+end
+set [falling v] to (0)
+point towards (mouse-pointer v)
+repeat until <(y position) < (-170)>
+  move (power) steps
+  change y by (falling)
+  change [falling v] by (-1)
+end
+go to x: (-200) y: (-140)
