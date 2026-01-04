@@ -1,0 +1,22 @@
+repeat until <(dropping) = (0)>
+  change y by (up speed)
+  change x by (right speed)
+  change [up speed v] by (-0.05)
+  switch costume to (Rocketship v)
+  if <key (right arrow v) pressed?> then
+    turn right (1) degrees
+  end
+  if <key (left arrow v) pressed?> then
+    turn left (1) degrees
+  end
++  if <(x position) > (240)> then
+    change x by (-480)
++  end
++  if <(x position) < (-240)> then
+    change x by (480)
++  end
+  if <key (space v) pressed?> then
+    thrust
+    switch costume to (Rocketship thrusting v)
+  end
+end

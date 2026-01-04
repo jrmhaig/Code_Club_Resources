@@ -1,0 +1,8 @@
+define lose
+set [dropping v] to (0)
+switch costume to (Explosion v)
+start sound (Explosion v)
++repeat (50)
+  turn right (pick random (-15) to (15)) degrees
+  change size by (pick random (-10) to (10))
++end

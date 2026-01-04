@@ -1,0 +1,4 @@
+define thrust
+start sound (Blast v)
+change [up movement v] by ((0.3) * ([sin v] of (direction)))
+change [side movement v] by ((-0.3) * ([cos v] of (direction)))
