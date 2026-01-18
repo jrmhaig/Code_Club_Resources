@@ -1,0 +1,6 @@
+when I start as a clone
+show
++ go to x: (-240) y: (-180)
++ forever
+  glide (1) secs to (random position v)
++ end

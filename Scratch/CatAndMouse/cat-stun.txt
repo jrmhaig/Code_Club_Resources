@@ -1,0 +1,28 @@
+when green flag clicked
+set size to (45)%
+go to x: (0) y: (0)
+forever
+  if <key [up arrow v] pressed?> then
+    point in direction (0)
+    move (10) steps
+  end
+  if <key [down arrow v] pressed?> then
+    point in direction (180)
+    move (10) steps
+  end
+  if <key [right arrow v] pressed?> then
+    point in direction (90)
+    move (10) steps
+  end
+  if <key [left arrow v] pressed?> then
+    point in direction (-90)
+    move (10) steps
+  end
++   if <touching (Tennis Ball v)> then
+  	start sound (Wobble v)
+    repeat (50)
+      turn right (15) degrees
+    end
++   end
+end
+

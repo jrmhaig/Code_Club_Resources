@@ -1,0 +1,7 @@
+when green flag clicked
+set size to (25)%
+hide
++ forever
+  create clone of (myself v)
+  wait (2) seconds
++ end

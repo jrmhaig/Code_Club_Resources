@@ -1,0 +1,8 @@
+when green flag clicked
+hide
+set [Mice v] to (0)
++ wait until <(Mice) > (5)>
++ go to x: (0) y: (0)
++ show
++ play sound (Bonk v) until done
++ stop [all v]

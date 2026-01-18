@@ -1,0 +1,14 @@
+when I start as a clone
+go to (random position v)
+show
+change [Mice v] by (1)
+forever
+  turn right (pick random (-15) to (15)) degrees
+  move (5) steps
+  if on edge, bounce
++   if <touching (Cat v) ?> then
+    start sound (Bite v)
+    change [Mice v] by (-1)
+    delete this clone
++   end
+end

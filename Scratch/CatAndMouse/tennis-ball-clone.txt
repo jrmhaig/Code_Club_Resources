@@ -1,0 +1,8 @@
+when green flag clicked
+hide
+set size to (100) %
++ forever
+  wait (10) seconds
+  start sound (High Whoosh v)
+  create clone of (myself v)
++ end
