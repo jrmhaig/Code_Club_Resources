@@ -1,0 +1,7 @@
+when green flag clicked
+hide
+forever
++  if <mouse down?> then
+    create clone of (myself v)
++  end
+end

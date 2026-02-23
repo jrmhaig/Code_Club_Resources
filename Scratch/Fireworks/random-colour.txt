@@ -1,0 +1,1 @@
+set [color v] effect to (pick random (1) to (200))

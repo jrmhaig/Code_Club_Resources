@@ -1,0 +1,11 @@
+when I start as a clone
+go to x: (mouse x) y: (-100)
+show
+start sound [whoosh v]
+glide (1) secs to (mouse pointer v)
++start sound [bang v]
++repeat (3)
+  next costume
+  wait (0.2) seconds
++end
+delete this clone

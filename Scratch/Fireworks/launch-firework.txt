@@ -1,0 +1,6 @@
++when I start as a clone
++go to x: (mouse x) y: (-100)
++show
++start sound [whoosh v]
++glide (1) secs to (mouse pointer v)
++delete this clone
