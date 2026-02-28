@@ -3,28 +3,18 @@ layout: default
 title: Code Club Resources
 ---
 
-This repository contains a collection of things I have created whilst running various [Code Clubs](https://www.codeclub.org.uk) over the years. You are welcome to use them if you find them helpful and feedback is always most welcome.
+Welcome to my collection of resources created for running various [Code Clubs](https://www.codeclub.org.uk). The focus of this site is now on the materials that are still actively useful in clubs.
 
-## Progress Booklets
+## Sections
 
-A 4 page A5 booklet to help children in a club to track their progress as they work through the three Scratch modules on the [Code Club projects page.](https://projects.raspberrypi.org/en/codeclub) They are correct as of the end of 2021.
+### Scratch project worksheets
 
-Download the PDF [here](https://github.com/jrmhaig/Code_Club_Resources/raw/master/ProgressBooklets/ScratchProgress.pdf).
+Worksheets and assets for a series of Scratch games suitable for Code Club sessions.
 
-## Reaction
+- [Browse the Scratch projects]({{ '/scratch' | relative_url }})
 
-A simple reaction game using electronics with a Raspberry Pi. This project is nearly 10 years old now so it will almost certainly need updating, not least because it uses Python 2. It has been copied and updated in various places including [here.](https://projects.raspberrypi.org/en/projects/python-quick-reaction-game)
+### Archive
 
-## Sierpinski
+Older resources that may still be of interest, but are no longer maintained.
 
-An interactive project to create a [Sierpiński triangle](https://en.wikipedia.org/wiki/Sierpiński_triangle) in Python. The code samples are intended as a guide for the teacher to explain each step and the students are expected to already have some experience with Python and the Turtle graphics module.
-
-Find the code [here.](https://github.com/jrmhaig/Code_Club_Resources/tree/master/Sierpinski)
-
-## Space Invaders
-
-A worksheet for building the classic Space Invaders game using PyGame. I have no idea what state this is in now. _Caveat emptor._
-
-## Turtle Intro
-
-My first venture into Python with 11-year-olds. I don't know how helpful it is now and it possibly contains a [copyright infringement.](https://en.wikipedia.org/wiki/Touch%C3%A9_Turtle_and_Dum_Dum)
+- [View the archive]({{ '/archive' | relative_url }})

@@ -30,3 +30,22 @@ body {
   margin-top: 1.5em;
 }
 
+/* Scratch project banners */
+.scratch-project {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.scratch-project:last-child {
+  border-bottom: none;
+}
+
+.scratch-project-banner {
+  max-width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1rem;
+  display: block;
+}
+
