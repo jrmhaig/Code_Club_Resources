@@ -1,2 +1,5 @@
 SpaceInvaders/*.aux
 SpaceInvaders/*.log
+
+# Jekyll build output
+_site/

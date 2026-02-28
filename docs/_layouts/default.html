@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title | default: site.title }}</title>
+
+    <!-- Bulma CSS framework -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+
+    <!-- Custom site styles -->
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/main.css' | relative_url }}"
+    />
+  </head>
+  <body>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="{{ '/' | relative_url }}">
+          {{ site.title }}
+        </a>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasic"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasic" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item is-active" href="{{ '/' | relative_url }}">
+            Home
+          </a>
+          {%- comment -%}
+          Add more navigation links here as you create new pages, e.g.:
+          <a class="navbar-item" href="{{ '/sierpinski/' | relative_url }}">Sierpinski</a>
+          {%- endcomment -%}
+        </div>
+        <div class="navbar-end">
+          <a
+            class="navbar-item has-text-weight-medium"
+            href="{{ site.github.repository_url | default: site.repository_url }}"
+            title="View source on GitHub"
+          >
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container content">
+        {{ content }}
+      </div>
+    </section>
+
+    <script>
+      // Simple Bulma navbar burger toggle
+      document.addEventListener("DOMContentLoaded", function () {
+        var burgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+        if (burgers.length > 0) {
+          burgers.forEach(function (el) {
+            el.addEventListener("click", function () {
+              var target = el.dataset.target;
+              var $target = document.getElementById(target);
+              el.classList.toggle("is-active");
+              $target.classList.toggle("is-active");
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

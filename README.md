@@ -2,6 +2,8 @@
 
 A few things for my Code Club.
 
+For more details see https://jrmhaig.github.io/Code_Club_Resources
+
 ## Licenses
 
 Unless stated otherwise, everything in this repository is (c) Joe Haig and
