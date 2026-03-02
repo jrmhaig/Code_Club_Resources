@@ -1,0 +1,6 @@
+when I receive [dance v]
+go to x: (0) y: (-30)
+set [dancing v] to (yes)
+repeat until <(dancing) = (no)>
+  next costume
++  wait (beat) seconds

@@ -1,0 +1,5 @@
+when I receive [song 1 v]
++set [beat v] to (0.3)
+broadcast (dance v)
+play sound (Chill v) until done
+broadcast (stop dancing v)

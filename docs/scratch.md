@@ -20,6 +20,17 @@ This section contains worksheet PDFs and supporting assets for a set of Scratch 
 
 <div class="scratch-project" markdown="1">
 
+![Cat and Mouse](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Scratch/DancingDino/dancing-dino-banner.png){: .scratch-project-banner }
+
+### Dancing Dino
+
+- Worksheet: [Dancing Dino (PDF)](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Scratch/DancingDino/DancingDino.pdf)
+- Assets and source files: [DancingDino folder](https://github.com/jrmhaig/Code_Club_Resources/tree/master/Scratch/DancingDino)
+
+</div>
+
+<div class="scratch-project" markdown="1">
+
 ![Fireworks](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Scratch/Fireworks/fireworks-banner.png){: .scratch-project-banner }
 
 ### Fireworks

@@ -1,0 +1,2 @@
+when this sprite clicked
+broadcast (song 1 v)

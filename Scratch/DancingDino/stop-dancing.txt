@@ -1,0 +1,3 @@
+when I receive [stop danceing v]
++set [dancing v] to (no)
+				

@@ -1,0 +1,2 @@
+when I receive [stop dancing v]
+show
