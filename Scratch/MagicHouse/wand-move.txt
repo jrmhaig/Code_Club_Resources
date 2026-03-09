@@ -1,0 +1,4 @@
+when I receive [click v]
+start sound (Teleport2 v)
+point towards (mouse-pointer v)
+glide (1) secs to (mouse-pointer v)

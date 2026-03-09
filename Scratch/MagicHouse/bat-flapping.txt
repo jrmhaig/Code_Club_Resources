@@ -1,0 +1,5 @@
+when I receive [bat move v]
+forever
+  next costume
+  change size by (1)
+end

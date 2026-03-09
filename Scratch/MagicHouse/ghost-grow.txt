@@ -1,0 +1,13 @@
+when I receive [ghost move v]
+go to (Potion v)
+show
+start sound (Crazy Laugh v)
+repeat (50)
+  change size by (2)
+end
+switch costume to (ghost-d v)
+start sound (Whiz v)
+repeat (50)
+  move (5) steps
+  change [ghost v] effect by (2)
+end

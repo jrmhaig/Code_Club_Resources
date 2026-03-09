@@ -1,0 +1,5 @@
+when this sprite clicked
+broadcast (click v)
+wait until <touching (Magic Wand v)>
+hide
+broadcast (ghost move v)

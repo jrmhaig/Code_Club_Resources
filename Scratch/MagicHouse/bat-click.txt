@@ -1,0 +1,6 @@
+when this sprite clicked
+broadcast (click v)
+wait until <touching (Magic Wand v)>
+go to [front v] layer
+point in direction (90)
+broadcast (bat move v)

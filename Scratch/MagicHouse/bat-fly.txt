@@ -1,0 +1,6 @@
+when I receive [bat move v]
+repeat (3)
+  glide (1) secs to (random position v)
+end
+hide
+stop [other scripts in sprite v]

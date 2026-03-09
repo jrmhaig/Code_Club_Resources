@@ -1,0 +1,9 @@
+when this sprite clicked
+broadcast (click v)
+wait until <touching (Magic Wand v)>
+play sound (Sneeze1 v) until done
+switch costume to (witch-a v)
+start sound (Magic Spell v)
+repeat (10)
+  change size by (4)
+  change y by (10)
