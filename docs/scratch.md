@@ -62,3 +62,13 @@ This section contains worksheet PDFs and supporting assets for a set of Scratch 
 
 </div>
 
+![Bat and Ball](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Scratch/BatAndBall/bat-and-ball-banner.png){: .scratch-project-banner }
+
+<div class="scratch-project" markdown="1">
+
+### Bat and Ball
+
+- Worksheet: [Bat and Ball (PDF)](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Scratch/BatAndBall/BatAndBall.pdf)
+- Assets and source files: [Bat and Ball folder](https://github.com/jrmhaig/Code_Club_Resources/tree/master/Scratch/BatAndBall)
+
+</div>
