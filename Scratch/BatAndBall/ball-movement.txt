@@ -1,0 +1,15 @@
+when i receive [Start v]
+show
+go to x: (0) y: (0)
+set [speed v] to (5)
+repeat until <touching color (#8100c7)>
++  change x by ((x direction)*(speed))
++  change y by ((y direction)*(speed))
++  if <<(x position)<(-220)> or <(x position)>(220)>> then
+    set [x direction v] to ((-1)*(x direction))
++  end
++  if <<touching (Player 1 v)?> or <touching (Player 2 v) ?>> then
+    set [y direction v] to ((-1)*(y direction))
+    start sound (Tennis Hit v)
++  end
+end

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCRIBUSUTF8NEW Version="1.6.4">
+    <DOCUMENT ANZPAGES="2" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" PRESET="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" ORIENTATION="0" PAGESIZE="A4" FIRSTNUM="1" BOOK="1" AUTOSPALTEN="1" ABSTSPALTEN="11" UNITS="1" DFONT="Arial Regular" DSIZE="12" DCOL="1" DGAP="0" TabFill="" TabWidth="36" TextDistLeft="0" TextDistRight="0" TextDistBottom="0" TextDistTop="0" FirstLineOffset="1" AUTHOR="" COMMENTS="" KEYWORDS="" PUBLISHER="" DOCDATE="" DOCTYPE="" DOCFORMAT="" DOCIDENT="" DOCSOURCE="" DOCLANGINFO="" DOCRELATION="" DOCCOVER="" DOCRIGHTS="" DOCCONTRIB="" TITLE="" SUBJECT="" VHOCH="33" VHOCHSC="66" VTIEF="33" VTIEFSC="66" VKAPIT="75" BASEGRID="14.4" BASEO="0" AUTOL="100" UnderlinePos="-1" UnderlineWidth="-1" StrikeThruPos="-1" StrikeThruWidth="-1" GROUPC="5" HCMS="0" DPSo="0" DPSFo="0" DPuse="0" DPgam="0" DPbla="1" DPPr="ISO Coated v2 300% (basICColor)" DPIn="sRGB display profile (ICC v2.2)" DPInCMYK="ISO Coated v2 300% (basICColor)" DPIn2="sRGB display profile (ICC v2.2)" DPIn3="ISO Coated v2 300% (basICColor)" DISc="1" DIIm="0" ALAYER="0" LANGUAGE="en_GB" AUTOMATIC="1" AUTOCHECK="0" GUIDELOCK="0" SnapToGuides="0" SnapToGrid="0" SnapToElement="0" MINGRID="20.001" MAJGRID="100.001" SHOWGRID="0" SHOWGUIDES="1" showcolborders="1" SHOWFRAME="1" SHOWControl="0" SHOWLAYERM="0" SHOWMARGIN="1" SHOWBASE="0" SHOWPICT="1" SHOWLINK="0" rulerMode="1" showrulers="1" showBleed="1" rulerXoffset="0" rulerYoffset="0" GuideRad="10" GRAB="4" POLYC="4" POLYF="0.502" POLYR="0" POLYIR="0" POLYCUR="0" POLYOCUR="0" POLYS="0" arcStartAngle="30" arcSweepAngle="300" spiralStartAngle="0" spiralEndAngle="1080" spiralFactor="1.2" AutoSave="1" AutoSaveTime="600000" AutoSaveCount="1" AutoSaveKeep="0" AUtoSaveInDocDir="1" AutoSaveDir="" ScratchBottom="20.001" ScratchLeft="100.001" ScratchRight="100.001" ScratchTop="20.001" GapHorizontal="0" GapVertical="40" StartArrow="0" EndArrow="0" PEN="Black" BRUSH="None" PENLINE="Black" PENTEXT="Black" StrokeText="Black" TextBackGround="None" TextLineColor="None" TextBackGroundShade="100" TextLineShade="100" TextPenShade="100" TextStrokeShade="100" STIL="1" STILLINE="1" WIDTH="1" WIDTHLINE="1" PENSHADE="100" LINESHADE="100" BRUSHSHADE="100" CPICT="None" PICTSHADE="100" CSPICT="None" PICTSSHADE="100" PICTSCX="1" PICTSCY="1" PSCALE="1" PASPECT="1" EmbeddedPath="0" HalfRes="1" dispX="10.001" dispY="10.001" constrain="15" MINORC="#00ff00" MAJORC="#00ff00" GuideC="#000080" BaseC="#c0c0c0" renderStack="2 0 4 1 3" GridType="0" PAGEC="#ffffff" MARGC="#0000ff" RANDF="0" currentProfile="PDF 1.4" calligraphicPenFillColor="Black" calligraphicPenLineColor="Black" calligraphicPenFillColorShade="100" calligraphicPenLineColorShade="100" calligraphicPenLineWidth="1" calligraphicPenAngle="0" calligraphicPenWidth="10" calligraphicPenStyle="1">
+        <CheckProfile Name="PDF 1.3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.5" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.6" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-1a" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="1" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="1" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="1" checkFontNotEmbedded="1" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PostScript" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="0" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <COLOR NAME="Black" SPACE="CMYK" C="0" M="0" Y="0" K="100"/>
+        <COLOR NAME="Blue" SPACE="RGB" R="0" G="0" B="255"/>
+        <COLOR NAME="Cool Black" SPACE="CMYK" C="60" M="0" Y="0" K="100"/>
+        <COLOR NAME="Cyan" SPACE="CMYK" C="100" M="0" Y="0" K="0"/>
+        <COLOR NAME="Green" SPACE="RGB" R="0" G="255" B="0"/>
+        <COLOR NAME="Magenta" SPACE="CMYK" C="0" M="100" Y="0" K="0"/>
+        <COLOR NAME="Red" SPACE="RGB" R="255" G="0" B="0"/>
+        <COLOR NAME="Registration" SPACE="CMYK" C="100" M="100" Y="100" K="100" Register="1"/>
+        <COLOR NAME="Rich Black" SPACE="CMYK" C="60" M="40" Y="40" K="100"/>
+        <COLOR NAME="Warm Black" SPACE="CMYK" C="0" M="60" Y="29.8039215686275" K="100"/>
+        <COLOR NAME="White" SPACE="CMYK" C="0" M="0" Y="0" K="0"/>
+        <COLOR NAME="Yellow" SPACE="CMYK" C="0" M="0" Y="100" K="0"/>
+        <HYPHEN/>
+        <CHARSTYLE CNAME="Default Character Style" DefaultStyle="1" FONT="Lexend Regular" FONTSIZE="12" FONTFEATURES="-clig" FEATURES="inherit" FCOLOR="Black" FSHADE="100" HyphenWordMin="3" SCOLOR="Black" BGCOLOR="None" BGSHADE="100" SSHADE="100" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1" SCALEH="100" SCALEV="100" BASEO="0" KERN="0" LANGUAGE="en_GB"/>
+        <STYLE NAME="Default Paragraph Style" DefaultStyle="1" ALIGN="0" DIRECTION="0" LINESPMode="0" LINESP="15" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" ParagraphEffectOffset="0" DROP="0" DROPLIN="2" Bullet="0" Numeration="0" HyphenConsecutiveLines="2" BCOLOR="None" BSHADE="100" FONT="Lexend Regular" FONTFEATURES="-clig"/>
+        <STYLE NAME="Title" FONT="Lexend Bold" FONTSIZE="24" FONTFEATURES="-clig"/>
+        <STYLE NAME="Paragraph" PARENT="Default Paragraph Style" FIRST="0"/>
+        <STYLE NAME="Bullet" PARENT="Default Paragraph Style" INDENT="70.8661417322835" ParagraphEffectOffset="2.83464566929134" DROP="0" Bullet="1" BulletStr="•" Numeration="0"/>
+        <STYLE NAME="Number" PARENT="Default Paragraph Style" ALIGN="1" FONT="Lexend ExtraBold" FONTSIZE="24" FONTFEATURES="-clig"/>
+        <TableStyle NAME="Default Table Style" DefaultStyle="1" FillColor="None" FillShade="100">
+            <TableBorderLeft>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderLeft>
+            <TableBorderRight>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderRight>
+            <TableBorderTop>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderTop>
+            <TableBorderBottom>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderBottom>
+        </TableStyle>
+        <CellStyle NAME="Default Cell Style" DefaultStyle="1" FillColor="None" FillShade="100" LeftPadding="1" RightPadding="1" TopPadding="1" BottomPadding="1">
+            <TableBorderLeft>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderLeft>
+            <TableBorderRight>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderRight>
+            <TableBorderTop>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderTop>
+            <TableBorderBottom>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderBottom>
+        </CellStyle>
+        <LAYERS NUMMER="0" LEVEL="0" NAME="Background" SICHTBAR="1" DRUCKEN="1" EDIT="1" SELECT="0" FLOW="1" TRANS="1" BLEND="0" OUTL="0" LAYERC="#000000"/>
+        <Printer firstUse="1" toFile="0" useAltPrintCommand="0" outputSeparations="0" useSpotColors="1" useColor="1" mirrorH="0" mirrorV="0" useICC="0" doGCR="0" doClip="0" setDevParam="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" includePDFMarks="1" PSLevel="3" PrintEngine="3" markLength="20.0013" markOffset="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" printer="File" filename="" separationName="All" printerCommand=""/>
+        <PDF firstUse="0" Thumbnails="0" Articles="0" Bookmarks="0" Compress="1" CMethod="0" Quality="0" EmbedPDF="0" MirrorH="0" MirrorV="0" Clip="0" rangeSel="0" rangeTxt="" RotateDeg="0" PresentMode="0" RecalcPic="0" FontEmbedding="0" Grayscale="0" RGBMode="1" UseProfiles="0" UseProfiles2="0" Binding="0" PicRes="300" Resolution="300" Version="14" Intent="1" Intent2="0" SolidP="sRGB display profile (ICC v2.2)" ImageP="sRGB display profile (ICC v2.2)" PrintP="ISO Coated v2 300% (basICColor)" InfoString="" BTop="0" BLeft="0" BRight="0" BBottom="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" docInfoMarks="0" markLength="20.0012598425197" markOffset="0" ImagePr="0" PassOwner="" PassUser="" Permissions="-4" Encrypt="0" UseLayers="0" UseLpi="0" UseSpotColors="1" doMultiFile="0" displayBookmarks="0" displayFullscreen="0" displayLayers="0" displayThumbs="0" hideMenuBar="0" hideToolBar="0" fitWindow="0" openAfterExport="0" PageLayout="0" openAction="">
+            <Fonts Name="Lexend Bold"/>
+            <Fonts Name="Lexend Regular"/>
+            <Subset Name="Lexend ExtraBold"/>
+            <LPI Color="" Frequency="10" Angle="0" SpotFunction="0"/>
+            <LPI Color="Black" Frequency="133" Angle="45" SpotFunction="3"/>
+            <LPI Color="Cyan" Frequency="133" Angle="105" SpotFunction="3"/>
+            <LPI Color="Magenta" Frequency="133" Angle="75" SpotFunction="3"/>
+            <LPI Color="Yellow" Frequency="133" Angle="90" SpotFunction="3"/>
+        </PDF>
+        <DocItemAttributes/>
+        <TablesOfContents/>
+        <NotesStyles>
+            <notesStyle Name="Default" Start="1" Endnotes="0" Type="Type_1_2_3" Range="0" Prefix="" Suffix=")" AutoHeight="1" AutoWidth="1" AutoRemove="1" AutoWeld="1" SuperNote="1" SuperMaster="1" MarksStyle="" NotesStyle=""/>
+        </NotesStyles>
+        <PageSets>
+            <Set Name="Single Page" FirstPage="0" Rows="1" Columns="1"/>
+            <Set Name="Facing Pages" FirstPage="1" Rows="1" Columns="2">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="3-Fold" FirstPage="0" Rows="1" Columns="3">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="4-Fold" FirstPage="0" Rows="1" Columns="4">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle Left"/>
+                <PageNames Name="Middle Right"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+        </PageSets>
+        <Sections>
+            <Section Number="0" Name="Section 1" From="0" To="1" Type="Type_1_2_3" Start="1" Reversed="0" Active="1" FillChar="0" FieldWidth="0"/>
+        </Sections>
+        <MASTERPAGE PAGEXPOS="100.001" PAGEYPOS="20.001" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="0" NAM="Normal Left" MNAM="" Size="A4" Orientation="0" LEFT="1" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <MASTERPAGE PAGEXPOS="100.001" PAGEYPOS="20.001" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="1" NAM="Normal Right" MNAM="" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="695.276590551181" PAGEYPOS="20.001" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="0" NAM="" MNAM="Normal Right" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.001" PAGEYPOS="901.890763779528" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="1" NAM="" MNAM="Normal Left" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGEOBJECT XPOS="734.96162992126" YPOS="382.83564566929" OwnPage="0" ItemID="695232007" PTYPE="4" WIDTH="515.905511811024" HEIGHT="181.417322834646" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.906 0 L515.906 181.417 L0 181.417 L0 0 Z" copath="M0 0 L515.906 0 L515.906 181.417 L0 181.417 L0 0 Z" gXpos="734.96162992126" gYpos="382.835645669291" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CH="The first thing to do is to let the players control their paddles. In the "/>
+                <ITEXT FONT="Lexend Bold" CH="player 1"/>
+                <ITEXT CH=" sprite create a new script when the green flag is clicked to;"/>
+                <para PARENT="Paragraph"/>
+                <ITEXT CH="put the paddle in the right place with a go to block - by setting x to 0 and y to -130 the paddle will go to the middle at the bottom of the stage"/>
+                <para PARENT="Bullet"/>
+                <ITEXT CH="in a forever loop detect if the left and right arrows are pressed and then move the paddle by changing its x position (left and right)"/>
+                <para PARENT="Bullet"/>
+                <ITEXT FONT="Lexend Bold" CH="Note:"/>
+                <ITEXT CH=" The picture on the right only shows you how to move left - you will need to work out how to move right!"/>
+                <para PARENT="Bullet"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="734.96162992126" YPOS="59.6860393700788" OwnPage="0" ItemID="695548887" PTYPE="4" WIDTH="184.251968503937" HEIGHT="31.1811023622047" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L184.252 0 L184.252 31.1811 L0 31.1811 L0 0 Z" copath="M0 0 L184.252 0 L184.252 31.1811 L0 31.1811 L0 0 Z" gXpos="734.96162992126" gYpos="59.6860393700788" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CH="Bat and Ball"/>
+                <para PARENT="Title"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="1038.26871653543" YPOS="99.3710787401575" OwnPage="0" ItemID="695614039" PTYPE="4" WIDTH="206.929133858268" HEIGHT="93.5433070866142" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L206.929 0 L206.929 93.5433 L0 93.5433 L0 0 Z" copath="M0 0 L206.929 0 L206.929 93.5433 L0 93.5433 L0 0 Z" gXpos="1038.26871653543" gYpos="99.3710787401575" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CH="Starter:"/>
+                <para PARENT="Default Paragraph Style"/>
+                <tab/>
+                <ITEXT CH="https://scratch.mit.edu/"/>
+                <para PARENT="Default Paragraph Style"/>
+                <tab/>
+                <ITEXT CH="projects/1270455000/editor"/>
+                <para PARENT="Default Paragraph Style"/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CH="Don't forget to remix and rename."/>
+                <trail PARENT="Default Paragraph Style"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="734.96162992126" YPOS="297.796275590551" OwnPage="0" ItemID="695715655" PTYPE="4" WIDTH="515.905511811024" HEIGHT="76.5354330708661" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.906 0 L515.906 76.5354 L0 76.5354 L0 0 Z" copath="M0 0 L515.906 0 L515.906 76.5354 L0 76.5354 L0 0 Z" gXpos="734.96162992126" gYpos="297.796275590552" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CH="The starter project has four sprites;"/>
+                <para PARENT="Paragraph"/>
+                <ITEXT FONT="Lexend Bold" CH="player 1"/>
+                <ITEXT CH=" and "/>
+                <ITEXT FONT="Lexend Bold" CH="player 2"/>
+                <ITEXT CH=" - these are the two bats that the players use and the code will be almost identical in each, but not quite"/>
+                <para PARENT="Bullet"/>
+                <ITEXT CH="the "/>
+                <ITEXT FONT="Lexend Bold" CH="ball"/>
+                <ITEXT CH=" that the players try to hit - most of the code will go in this sprite"/>
+                <para PARENT="Bullet"/>
+                <ITEXT CH="a "/>
+                <ITEXT FONT="Lexend Bold" CH="countdown"/>
+                <ITEXT CH=" to let the players get ready to play"/>
+                <para PARENT="Bullet"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="139.686039370079" YPOS="1344.09548818898" OwnPage="1" ItemID="695870615" PTYPE="4" WIDTH="515.905511811024" HEIGHT="257.952755905512" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.906 0 L515.906 257.953 L0 257.953 L0 0 Z" copath="M0 0 L515.906 0 L515.906 257.953 L0 257.953 L0 0 Z" gXpos="734.96162992126" gYpos="462.205724409449" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="Lexend ExtraBold" CH="Optional (tricky!)"/>
+                <para PARENT="Paragraph"/>
+                <ITEXT CH="You might have noticed that you can &quot;catch&quot; the ball if you hit it with the edge of the paddle. We can fix this with"/>
+                <ITEXT FONT="Lexend Bold" CH=" debounce."/>
+                <ITEXT CH=" In the script in the "/>
+                <ITEXT FONT="Lexend Bold" CH="ball"/>
+                <ITEXT CH=" sprite;"/>
+                <para PARENT="Paragraph"/>
+                <ITEXT CH="set the "/>
+                <ITEXT FONT="Lexend Bold" CH="debounce"/>
+                <ITEXT CH=" variable to zero before the repeat"/>
+                <para PARENT="Bullet"/>
+                <ITEXT CH="set the "/>
+                <ITEXT FONT="Lexend Bold" CH="debounce"/>
+                <ITEXT CH=" variable to 5 when it hits the paddle"/>
+                <para PARENT="Bullet"/>
+                <ITEXT CH="put the check for touching the paddle around an "/>
+                <ITEXT FONT="Lexend Bold" CH="if ... else"/>
+                <ITEXT CH=" block so that if debounce is greater than 0 it will reduce it instead of checking the collision with the paddle"/>
+                <para PARENT="Bullet"/>
+                <ITEXT FONT="Lexend ExtraBold" CH="You might be interested ..."/>
+                <ITEXT CH=" "/>
+                <ITEXT FONT="Lexend Bold" CH="Debounce"/>
+                <ITEXT CH=" is used in web pages to stop things happening lots of times if a button is pressed lots of times quickly."/>
+                <trail PARENT="Paragraph"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="1162.99312598425" YPOS="156.063992125984" OwnPage="0" ItemID="695747031" PTYPE="2" WIDTH="76.5354330708661" HEIGHT="32.7321348982321" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.481354924974001" LOCALSCY="0.481354924974001" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="159px-Remix_3.0.png" IRENDER="0" EMBEDDED="0" path="M0 0 L76.5354 0 L76.5354 32.7321 L0 32.7321 L0 0 Z" copath="M0 0 L76.5354 0 L76.5354 32.7321 L0 32.7321 L0 0 Z" gXpos="1162.99312598425" gYpos="156.063992125984" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="734.96162992126" YPOS="572.75690551181" OwnPage="0" ItemID="695757767" PTYPE="4" WIDTH="515.905511811024" HEIGHT="76.5354330708661" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.906 0 L515.906 76.5354 L0 76.5354 L0 0 Z" copath="M0 0 L515.906 0 L515.906 76.5354 L0 76.5354 L0 0 Z" gXpos="734.96162992126" gYpos="572.756905511811" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CH="The code for "/>
+                <ITEXT FONT="Lexend Bold" CH="player 2"/>
+                <ITEXT CH=" is almost the same as for player 1 so you can drag the script from player 1 and drop it onto player 2 underneath the stage. Then in "/>
+                <ITEXT FONT="Lexend Bold" CH="player 2"/>
+                <ITEXT CH=" you need to make a few changes;"/>
+                <para PARENT="Paragraph"/>
+                <ITEXT CH="change "/>
+                <ITEXT FONT="Lexend Bold" CH="y"/>
+                <ITEXT CH=" in the "/>
+                <ITEXT FONT="Lexend Bold" CH="go to"/>
+                <ITEXT CH=" block to put the paddle at the top of the screen"/>
+                <para PARENT="Bullet"/>
+                <ITEXT CH="look at your keyboard and choose two different keys for left and right"/>
+                <para PARENT="Bullet"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="139.686039370079" YPOS="1103.15060629921" OwnPage="1" ItemID="696267863" PTYPE="4" WIDTH="515.905511811024" HEIGHT="138.897637795276" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.906 0 L515.906 138.898 L0 138.898 L0 0 Z" copath="M0 0 L515.906 0 L515.906 138.898 L0 138.898 L0 0 Z" gXpos="734.96162992126" gYpos="221.260842519686" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CH="Now to keep score and start again when one of the players misses. The while touching colour loop will stop when the ball hits the top or bottom so after this;"/>
+                <para PARENT="Paragraph"/>
+                <ITEXT CH="hide the ball and play a sound"/>
+                <para PARENT="Bullet"/>
+                <ITEXT CH="if the ball is at the bottom add one to player 1's score"/>
+                <para PARENT="Bullet"/>
+                <ITEXT CH="if the ball is at the top add one to player 2's score"/>
+                <para PARENT="Bullet"/>
+                <ITEXT CH="send a message to start the countdown again"/>
+                <para PARENT="Bullet"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="437.323834645669" YPOS="1349.76477952757" OwnPage="1" ItemID="695969895" PTYPE="2" WIDTH="215.433070866142" HEIGHT="184.251968503937" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.16875" LOCALSCY="0.16875" LOCALX="0" LOCALY="-1024.6719160105" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="ball-debounce.png" IRENDER="0" EMBEDDED="0" path="M0 0 L215.433 0 L215.433 184.252 L0 184.252 L0 0 Z" copath="M0 0 L215.433 0 L215.433 184.252 L0 184.252 L0 0 Z" gXpos="437.323834645669" gYpos="1349.76477952756" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="1120.47344094487" YPOS="368.662417322835" OwnPage="0" ItemID="695943255" PTYPE="2" WIDTH="127.55905511811" HEIGHT="209.763779527559" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.16875" LOCALSCY="0.16875" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="bat-movement.png" IRENDER="0" EMBEDDED="0" path="M0 0 L127.559 0 L127.559 209.764 L0 209.764 L0 0 Z" copath="M0 0 L127.559 0 L127.559 209.764 L0 209.764 L0 0 Z" gXpos="1120.47344094487" gYpos="368.662417322835" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="142.520685039371" YPOS="1162.67816535433" OwnPage="1" ItemID="696805863" PTYPE="2" WIDTH="107.716535433071" HEIGHT="175.748031496063" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.16875" LOCALSCY="0.16875" LOCALX="0" LOCALY="-1327.03412073491" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="ball-score-and-restart.png" IRENDER="0" EMBEDDED="0" path="M0 0 L107.717 0 L107.717 175.748 L0 175.748 L0 0 Z" copath="M0 0 L107.717 0 L107.717 175.748 L0 175.748 L0 0 Z" gXpos="142.520685039371" gYpos="1162.67816535433" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="139.686039370079" YPOS="1607.71753543308" OwnPage="1" ItemID="696809031" PTYPE="4" WIDTH="515.905511811024" HEIGHT="76.5354330708661" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.906 0 L515.906 76.5354 L0 76.5354 L0 0 Z" copath="M0 0 L515.906 0 L515.906 76.5354 L0 76.5354 L0 0 Z" gXpos="734.96162992126" gYpos="725.827771653546" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CH="What can you add to the game? Here are some ideas;"/>
+                <para PARENT="Paragraph"/>
+                <ITEXT CH="Make the ball move faster as the game goes on."/>
+                <para PARENT="Bullet"/>
+                <ITEXT CH="Stop the game when one player reaches a certain score, so the game doesn't go on forever!"/>
+                <para PARENT="Bullet"/>
+                <ITEXT CH="Something else from your own imagination!"/>
+                <trail PARENT="Bullet"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="139.686039370079" YPOS="944.410448818891" OwnPage="1" ItemID="696840839" PTYPE="4" WIDTH="515.905511811024" HEIGHT="153.070866141732" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.906 0 L515.906 153.071 L0 153.071 L0 0 Z" copath="M0 0 L515.906 0 L515.906 153.071 L0 153.071 L0 0 Z" gXpos="734.96162992126" gYpos="62.5206850393713" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CH="Now to get the ball moving. In the "/>
+                <ITEXT FONT="Lexend Bold" CH="ball"/>
+                <ITEXT CH=" sprite;"/>
+                <para PARENT="Paragraph"/>
+                <ITEXT CH="move the ball by changing the x and y position depending on the variables "/>
+                <ITEXT FONT="Lexend Bold" CH="x direction"/>
+                <ITEXT CH=", "/>
+                <ITEXT FONT="Lexend Bold" CH="y direction"/>
+                <ITEXT CH=" and "/>
+                <ITEXT FONT="Lexend Bold" CH="speed"/>
+                <para PARENT="Bullet"/>
+                <ITEXT CH="if the ball gets to the left or right edge then bounce - change "/>
+                <ITEXT FONT="Lexend Bold" CH="x direction"/>
+                <ITEXT CH=" so it goes the opposite way"/>
+                <para PARENT="Bullet"/>
+                <ITEXT CH="if the ball hits one of the players' paddles then bounce - change "/>
+                <ITEXT FONT="Lexend Bold" CH="y direction"/>
+                <para PARENT="Bullet"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="441.702793520238" YPOS="948.519782285965" OwnPage="1" ItemID="696638231" PTYPE="2" WIDTH="209.763779527559" HEIGHT="257.952755905512" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.16875" LOCALSCY="0.16875" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="ball-movement.png" IRENDER="0" EMBEDDED="0" path="M0 0 L209.764 0 L209.764 257.953 L0 257.953 L0 0 Z" copath="M0 0 L209.764 0 L209.764 257.953 L0 257.953 L0 0 Z" gXpos="1036.97838407141" gYpos="66.6300185064439" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="743.465566929134" YPOS="99.3710787401574" OwnPage="0" ItemID="696645751" PTYPE="2" WIDTH="289.133858267717" HEIGHT="192.755905511811" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.188238188976378" LOCALSCY="0.188238188976378" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="bat-and-ball-banner.png" IRENDER="0" EMBEDDED="0" path="M0 0 L289.134 0 L289.134 192.756 L0 192.756 L0 0 Z" copath="M0 0 L289.134 0 L289.134 192.756 L0 192.756 L0 0 Z" gXpos="743.465566929134" gYpos="99.3710787401574" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="386.300212598425" YPOS="1687.08761417323" OwnPage="1" ItemID="705415511" PTYPE="4" WIDTH="269.291338582677" HEIGHT="17.007874015748" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L269.291 0 L269.291 17.0079 L0 17.0079 L0 0 Z" copath="M0 0 L269.291 0 L269.291 17.0079 L0 17.0079 L0 0 Z" gXpos="386.300212598425" gYpos="1687.08761417323" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CH="© 2026 Joe Haig — Licensed CC BY-NC-SA 4.0"/>
+                <trail PARENT="Default Paragraph Style"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="734.961629921258" YPOS="294.96162992126" OwnPage="0" ItemID="705613415" PTYPE="6" WIDTH="36.8503937007874" HEIGHT="31.1811023622047" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" path="M0 0 L36.8504 0 L36.8504 31.1811 L0 31.1811 L0 0 Z" copath="M0 0 L36.8504 0 L36.8504 31.1811 L0 31.1811 L0 0 Z" gXpos="734.961629921258" gYpos="294.96162992126" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="734.961629921258" YPOS="379.501" OwnPage="0" ItemID="705614551" PTYPE="12" WIDTH="36.8503937007874" HEIGHT="32.1811023622047" FRTYPE="0" CLIPEDIT="0" ANNAME="Group2" TEXTFLOWMODE="1" groupWidth="36.8503937007874" groupHeight="32.1811023622047" groupClips="1" path="M0 0 L36.8504 0 L36.8504 32.1811 L0 32.1811 L0 0 Z" copath="M0 0 L36.8504 0 L36.8504 32.1811 L0 32.1811 L0 0 Z" gXpos="734.961629921258" gYpos="379.501" gWidth="0" gHeight="0" LAYER="0">
+            <PAGEOBJECT XPOS="734.961629921258" YPOS="380.001" OwnPage="0" ItemID="705625671" PTYPE="6" WIDTH="36.8503937007874" HEIGHT="31.1811023622047" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" path="M0 0 L36.8504 0 L36.8504 31.1811 L0 31.1811 L0 0 Z" copath="M0 0 L36.8504 0 L36.8504 31.1811 L0 31.1811 L0 0 Z" gXpos="0" gYpos="0.5" gWidth="36.8503937007874" gHeight="32.1811023622047" LAYER="0"/>
+            <PAGEOBJECT XPOS="737.796275590551" YPOS="380.001" OwnPage="0" ItemID="709201127" PTYPE="4" WIDTH="31.1811023622047" HEIGHT="31.1811023622047" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="White" PCOLOR2="Black" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L31.1811 0 L31.1811 31.1811 L0 31.1811 L0 0 Z" copath="M0 0 L31.1811 0 L31.1811 31.1811 L0 31.1811 L0 0 Z" gXpos="2.83464566929297" gYpos="0.5" gWidth="36.8503937007874" gHeight="32.1811023622047" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle/>
+                    <ITEXT CH="2"/>
+                    <trail PARENT="Number"/>
+                </StoryText>
+            </PAGEOBJECT>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="737.796275590551" YPOS="294.96162992126" OwnPage="0" ItemID="709109143" PTYPE="4" WIDTH="31.1811023622047" HEIGHT="31.1811023622047" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="White" PCOLOR2="Black" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L31.1811 0 L31.1811 31.1811 L0 31.1811 L0 0 Z" copath="M0 0 L31.1811 0 L31.1811 31.1811 L0 31.1811 L0 0 Z" gXpos="737.796275590551" gYpos="294.96162992126" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CH="1"/>
+                <trail PARENT="Number"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="734.961629921258" YPOS="569.422259842519" OwnPage="0" ItemID="709216919" PTYPE="12" WIDTH="36.8503937007874" HEIGHT="32.1811023622047" FRTYPE="0" CLIPEDIT="0" ANNAME="Group1" TEXTFLOWMODE="1" groupWidth="36.8503937007874" groupHeight="32.1811023622047" groupClips="1" path="M0 0 L36.8504 0 L36.8504 32.1811 L0 32.1811 L0 0 Z" copath="M0 0 L36.8504 0 L36.8504 32.1811 L0 32.1811 L0 0 Z" gXpos="734.961629921258" gYpos="569.422259842519" gWidth="0" gHeight="0" LAYER="0">
+            <PAGEOBJECT XPOS="734.961629921258" YPOS="569.922259842519" OwnPage="0" ItemID="709219319" PTYPE="6" WIDTH="36.8503937007874" HEIGHT="31.1811023622047" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" path="M0 0 L36.8504 0 L36.8504 31.1811 L0 31.1811 L0 0 Z" copath="M0 0 L36.8504 0 L36.8504 31.1811 L0 31.1811 L0 0 Z" gXpos="0" gYpos="0.5" gWidth="36.8503937007874" gHeight="32.1811023622047" LAYER="0"/>
+            <PAGEOBJECT XPOS="737.796275590551" YPOS="569.922259842519" OwnPage="0" ItemID="709290263" PTYPE="4" WIDTH="31.1811023622047" HEIGHT="31.1811023622047" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="White" PCOLOR2="Black" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L31.1811 0 L31.1811 31.1811 L0 31.1811 L0 0 Z" copath="M0 0 L31.1811 0 L31.1811 31.1811 L0 31.1811 L0 0 Z" gXpos="2.83464566929297" gYpos="0.5" gWidth="36.8503937007874" gHeight="32.1811023622047" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle/>
+                    <ITEXT CH="3"/>
+                    <trail PARENT="Number"/>
+                </StoryText>
+            </PAGEOBJECT>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="139.686039370077" YPOS="941.075803149604" OwnPage="1" ItemID="709167095" PTYPE="12" WIDTH="36.8503937007874" HEIGHT="32.1811023622047" FRTYPE="0" CLIPEDIT="0" ANNAME="Group6" TEXTFLOWMODE="1" groupWidth="36.8503937007874" groupHeight="32.1811023622047" groupClips="1" path="M0 0 L36.8504 0 L36.8504 32.1811 L0 32.1811 L0 0 Z" copath="M0 0 L36.8504 0 L36.8504 32.1811 L0 32.1811 L0 0 Z" gXpos="139.686039370077" gYpos="941.075803149604" gWidth="0" gHeight="0" LAYER="0">
+            <PAGEOBJECT XPOS="139.686039370077" YPOS="941.575803149603" OwnPage="1" ItemID="709176423" PTYPE="6" WIDTH="36.8503937007874" HEIGHT="31.1811023622047" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" path="M0 0 L36.8504 0 L36.8504 31.1811 L0 31.1811 L0 0 Z" copath="M0 0 L36.8504 0 L36.8504 31.1811 L0 31.1811 L0 0 Z" gXpos="0" gYpos="0.499999999998977" gWidth="36.8503937007874" gHeight="32.1811023622047" LAYER="0"/>
+            <PAGEOBJECT XPOS="142.52068503937" YPOS="941.575803149604" OwnPage="1" ItemID="709292999" PTYPE="4" WIDTH="31.1811023622047" HEIGHT="31.1811023622047" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="White" PCOLOR2="Black" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L31.1811 0 L31.1811 31.1811 L0 31.1811 L0 0 Z" copath="M0 0 L31.1811 0 L31.1811 31.1811 L0 31.1811 L0 0 Z" gXpos="2.834645669293" gYpos="0.5" gWidth="36.8503937007874" gHeight="32.1811023622047" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle/>
+                    <ITEXT FONTSIZE="24" CH="5"/>
+                    <trail PARENT="Number"/>
+                </StoryText>
+            </PAGEOBJECT>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="139.686039370079" YPOS="1100.31596062992" OwnPage="1" ItemID="709347335" PTYPE="6" WIDTH="36.8503937007874" HEIGHT="31.1811023622047" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" path="M0 0 L36.8504 0 L36.8504 31.1811 L0 31.1811 L0 0 Z" copath="M0 0 L36.8504 0 L36.8504 31.1811 L0 31.1811 L0 0 Z" gXpos="734.961629921259" gYpos="218.426196850396" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="142.52068503937" YPOS="1100.31596062992" OwnPage="1" ItemID="709270679" PTYPE="4" WIDTH="31.1811023622047" HEIGHT="31.1811023622047" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="White" PCOLOR2="Black" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L31.1811 0 L31.1811 31.1811 L0 31.1811 L0 0 Z" copath="M0 0 L31.1811 0 L31.1811 31.1811 L0 31.1811 L0 0 Z" gXpos="737.796275590551" gYpos="218.426196850394" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CH="6"/>
+                <trail PARENT="Number"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="734.96162992126" YPOS="654.96162992126" OwnPage="0" ItemID="709231255" PTYPE="4" WIDTH="515.905511811024" HEIGHT="167.244094488189" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.906 0 L515.906 167.244 L0 167.244 L0 0 Z" copath="M0 0 L515.906 0 L515.906 167.244 L0 167.244 L0 0 Z" gXpos="734.96162992126" gYpos="654.961629921261" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CH="Next, the "/>
+                <ITEXT FONT="Lexend Bold" CH="countdown"/>
+                <ITEXT CH=" sprite will let the players get ready."/>
+                <para PARENT="Paragraph"/>
+                <ITEXT CH="At the very start, when the green flag is clicked;"/>
+                <para PARENT="Paragraph"/>
+                <ITEXT FONT="Lexend Bold" CH="broadcast"/>
+                <ITEXT CH=" the 'Countdown' message to make the countdown start"/>
+                <para PARENT="Bullet"/>
+                <ITEXT CH="And then, in the "/>
+                <ITEXT FONT="Lexend Bold" CH="when I receive Countdown"/>
+                <ITEXT CH=" block;"/>
+                <para PARENT="Paragraph"/>
+                <ITEXT CH="show the number 3 costume"/>
+                <para PARENT="Bullet"/>
+                <ITEXT CH="three times, wait for a second and then show the next number costume"/>
+                <para PARENT="Bullet"/>
+                <ITEXT CH="after this, hide the countdown and broadcast a Start message to tell the ball to go"/>
+                <para PARENT="Bullet"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="1160.15848031496" YPOS="657.796275590551" OwnPage="0" ItemID="709277319" PTYPE="2" WIDTH="87.8740157480315" HEIGHT="153.070866141732" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.16875" LOCALSCY="0.16875" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="countdown.png" IRENDER="0" EMBEDDED="0" path="M0 0 L87.874 0 L87.874 153.071 L0 153.071 L0 0 Z" copath="M0 0 L87.874 0 L87.874 153.071 L0 153.071 L0 0 Z" gXpos="1160.15848031496" gYpos="657.796275590551" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="734.961629921258" YPOS="651.626984251969" OwnPage="0" ItemID="709254135" PTYPE="12" WIDTH="36.8503937007874" HEIGHT="32.1811023622047" FRTYPE="0" CLIPEDIT="0" ANNAME="Group5" TEXTFLOWMODE="1" groupWidth="36.8503937007874" groupHeight="32.1811023622047" groupClips="1" path="M0 0 L36.8504 0 L36.8504 32.1811 L0 32.1811 L0 0 Z" copath="M0 0 L36.8504 0 L36.8504 32.1811 L0 32.1811 L0 0 Z" gXpos="734.961629921258" gYpos="651.626984251969" gWidth="0" gHeight="0" LAYER="0">
+            <PAGEOBJECT XPOS="734.961629921258" YPOS="652.126984251969" OwnPage="0" ItemID="709662455" PTYPE="6" WIDTH="36.8503937007874" HEIGHT="31.1811023622047" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" path="M0 0 L36.8504 0 L36.8504 31.1811 L0 31.1811 L0 0 Z" copath="M0 0 L36.8504 0 L36.8504 31.1811 L0 31.1811 L0 0 Z" gXpos="0" gYpos="0.5" gWidth="36.8503937007874" gHeight="32.1811023622047" LAYER="0"/>
+            <PAGEOBJECT XPOS="737.796275590551" YPOS="652.126984251969" OwnPage="0" ItemID="709601783" PTYPE="4" WIDTH="31.1811023622047" HEIGHT="31.1811023622047" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="White" PCOLOR2="Black" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L31.1811 0 L31.1811 31.1811 L0 31.1811 L0 0 Z" copath="M0 0 L31.1811 0 L31.1811 31.1811 L0 31.1811 L0 0 Z" gXpos="2.83464566929297" gYpos="0.5" gWidth="36.8503937007874" gHeight="32.1811023622047" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle/>
+                    <ITEXT FONTSIZE="24" CH="4"/>
+                    <trail PARENT="Number"/>
+                </StoryText>
+            </PAGEOBJECT>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="139.686039370079" YPOS="1341.26084251969" OwnPage="1" ItemID="709577383" PTYPE="6" WIDTH="36.8503937007874" HEIGHT="31.1811023622047" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" path="M0 0 L36.8504 0 L36.8504 31.1811 L0 31.1811 L0 0 Z" copath="M0 0 L36.8504 0 L36.8504 31.1811 L0 31.1811 L0 0 Z" gXpos="734.961629921259" gYpos="459.371078740159" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="142.52068503937" YPOS="1341.26084251969" OwnPage="1" ItemID="709642759" PTYPE="4" WIDTH="31.1811023622047" HEIGHT="31.1811023622047" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="White" PCOLOR2="Black" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L31.1811 0 L31.1811 31.1811 L0 31.1811 L0 0 Z" copath="M0 0 L31.1811 0 L31.1811 31.1811 L0 31.1811 L0 0 Z" gXpos="737.796275590551" gYpos="459.371078740157" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CH="7"/>
+                <trail PARENT="Number"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="139.686039370079" YPOS="1604.88288976378" OwnPage="1" ItemID="709645303" PTYPE="6" WIDTH="36.8503937007874" HEIGHT="31.1811023622047" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" path="M0 0 L36.8504 0 L36.8504 31.1811 L0 31.1811 L0 0 Z" copath="M0 0 L36.8504 0 L36.8504 31.1811 L0 31.1811 L0 0 Z" gXpos="734.961629921259" gYpos="722.993125984255" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="142.52068503937" YPOS="1604.88288976378" OwnPage="1" ItemID="709652567" PTYPE="4" WIDTH="31.1811023622047" HEIGHT="31.1811023622047" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="White" PCOLOR2="Black" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L31.1811 0 L31.1811 31.1811 L0 31.1811 L0 0 Z" copath="M0 0 L31.1811 0 L31.1811 31.1811 L0 31.1811 L0 0 Z" gXpos="737.796275590551" gYpos="722.993125984253" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CH="8"/>
+                <trail PARENT="Number"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="1080.7884015748" YPOS="657.796275590551" OwnPage="0" ItemID="709635271" PTYPE="2" WIDTH="76.5354330708661" HEIGHT="59.5275590551181" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.16875" LOCALSCY="0.16875" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="trigger-countdown.png" IRENDER="0" EMBEDDED="0" path="M0 0 L76.5354 0 L76.5354 59.5276 L0 59.5276 L0 0 Z" copath="M0 0 L76.5354 0 L76.5354 59.5276 L0 59.5276 L0 0 Z" gXpos="1080.7884015748" gYpos="657.796275590551" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="260.72540944882" YPOS="1244.88288976378" OwnPage="1" ItemID="709740839" PTYPE="4" WIDTH="385.511811023622" HEIGHT="93.5433070866142" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="3" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L385.512 0 L385.512 93.5433 L0 93.5433 L0 0 Z" copath="M0 0 L385.512 0 L385.512 93.5433 L0 93.5433 L0 0 Z" gXpos="856.001000000002" gYpos="362.99312598425" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="Lexend ExtraBold" CH="You might have wondered ..."/>
+                <para PARENT="Paragraph"/>
+                <ITEXT CH="In the countdown sprite why did we put the countdown in a "/>
+                <ITEXT FONT="Lexend Bold" CH="when I receive message "/>
+                <ITEXT FONT="Lexend Regular" CH="block"/>
+                <ITEXT CH=" and not the "/>
+                <ITEXT FONT="Lexend Bold" CH="when green flag clicked"/>
+                <ITEXT CH=" block?"/>
+                <para PARENT="Bullet"/>
+                <ITEXT CH="It is so that the countdown could be started again in exactly the same way from here."/>
+                <para PARENT="Bullet"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="321.103362204724" YPOS="1358.26871653544" OwnPage="1" ItemID="709750439" PTYPE="2" WIDTH="113.385826771654" HEIGHT="73.7007874015748" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.16875" LOCALSCY="0.16875" LOCALX="0" LOCALY="-268.766404199475" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="ball-debounce.png" IRENDER="0" EMBEDDED="0" path="M0 0 L113.386 0 L113.386 73.7008 L0 73.7008 L0 0 Z" copath="M0 0 L113.386 0 L113.386 73.7008 L0 73.7008 L0 0 Z" gXpos="321.103362204724" gYpos="1358.26871653543" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+    </DOCUMENT>
+</SCRIBUSUTF8NEW>

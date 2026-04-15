@@ -1,0 +1,16 @@
++ when green flag clicked
++ go to x: (0) y: (-130)
++ forever
+  if <key (left arrow v) pressed> then
+    change x by (-10)
+    if <(x position) < (-230)> then
+      change x by (10)
+    end
+  end
+  if <key (right arrow v) pressed> then
+    change x by (10)
+    if <(x position) > (230)> then
+      change x by (-10)
+    end
+  end
++ end

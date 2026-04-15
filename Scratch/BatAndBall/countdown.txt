@@ -1,0 +1,9 @@
+when i receive [Countdown v]
++ show
++ switch costume to (Glow-3 v)
++ repeat (3)
+  wait (1) seconds
+  next costume
++ end
++ hide
++ broadcast (Start v)

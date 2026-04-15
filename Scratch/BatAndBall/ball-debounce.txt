@@ -1,0 +1,30 @@
+when i receive [Start v]
+show
+go to x: (0) y: (0)
+set [speed v] to (5)
++set [debounce v] to (0)
+repeat until <touching color (#8100c7)>
+  change x by ((x direction)*(speed))
+  change y by ((y direction)*(speed))
+  if <<(x position)<(-220)> or <(x position)>(220)>> then
+    set [x direction v] to ((-1)*(x direction))
+  end
++  if <(debounce)>(0)> then
+    change (debounce) by (-1)
++  else
+    if <<touching (Player 1 v)?> or <touching (Player 2 v) ?>> then
+      set [y direction v] to ((-1)*(y direction))
+      start sound (Tennis Hit v)
++      set (debounce) to (5)
+    end
++  end
+end
+hide
+play sound (Oops v) until done
+if <(y position)<(0)> then
+  change [Player 1 score v] by (1)
+end
+if <(y position)>(0)> then
+  change [Player 2 score v] by (1)
+end
+broadcast (Countdown v)
