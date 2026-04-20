@@ -1,0 +1,8 @@
++ when green flag clicked
++ set [Lives v] to (3)
++ set [Time v] to (0)
++ repeat until <(lives) = (0)>
+  wait (1) second
+  change [Time v] by (1)
++ end
++ broadcast (Stop v)

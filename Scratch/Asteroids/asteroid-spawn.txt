@@ -1,0 +1,7 @@
+when green flag clicked
+hide
++ forever
+  wait (1) seconds
+  go to x: (pick random (-230) to (230)) y: (170)
+  create clone of (myself v)
++ end

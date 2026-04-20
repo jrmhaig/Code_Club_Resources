@@ -1,0 +1,6 @@
++ when I start as a clone
++ show
++ repeat until <(y position) < (-170)>
+  change y by (-5)
++ end
++ delete this clone

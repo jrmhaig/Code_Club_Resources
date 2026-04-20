@@ -1,0 +1,11 @@
+when green flag clicked
+set size to (50) %
+go to x: (0) y: (-150)
++ forever
+  if <<key (right arrow v) pressed?> and <(x position) < (230) >> then
+    change x by (5)
+  end
+  if <<key (left arrow v) pressed?> and <(x position) > (230) >> then
+    change x by (-5)
+  end
++ end

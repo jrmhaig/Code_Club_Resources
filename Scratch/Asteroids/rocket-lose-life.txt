@@ -1,0 +1,13 @@
+when green flag clicked
+forever
+  if <touching (Asteroid v)?> then
+  start sound (Oops v)
++  change [Lives v] by (-1)
+  repeat (5)
+    wait (0.2) seconds
+    hide
+    wait (0.2) seconds
+    show
+  end
+end
+

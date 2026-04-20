@@ -1,0 +1,2 @@
++ when I receive [Stop v]
++ stop [other scripts in sprite v]
