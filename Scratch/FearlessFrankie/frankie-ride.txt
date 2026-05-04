@@ -1,0 +1,17 @@
+when green flag clicked
+set size to (15)%
+go to x: (-195) y: (120)
++set [Speed v] to (0)
++repeat until <touching color (#ffff00) ?>
+  if <<key (right arrow v) pressed?> and <(Speed) < (25) >> then
+    change [Speed v] by (1)
+  end
+  if <<key (left arrow v) pressed?> and <(Speed) > (0) >> then
+    change [Speed v] by (-1)
+  end
+  change x by (Speed)
+  if <(x position) > (240) > then
+    change x by (-480)
+	change y by (-90)
+  end
++end

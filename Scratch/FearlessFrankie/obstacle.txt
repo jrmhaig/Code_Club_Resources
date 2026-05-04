@@ -1,0 +1,8 @@
+when green flag clicked
+set size to (18)%
++go to x: (50) y: (116)
++forever
+  if <touching (Frankie v) ?> then
+    set [Crashed v] to (1)
+  end
++end
