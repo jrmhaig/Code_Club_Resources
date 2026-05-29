@@ -13,6 +13,12 @@ Worksheets and assets for a series of Scratch games suitable for Code Club sessi
 
 - [Browse the Scratch projects]({{ '/scratch' | relative_url }})
 
+### Other resources
+
+Here are links to other people's resources;
+
+* [Gravesend Code Club projects](https://ganzogo.github.io/gravesend-code-club/)
+
 ### Archive
 
 Older resources that may still be of interest, but are no longer maintained.
