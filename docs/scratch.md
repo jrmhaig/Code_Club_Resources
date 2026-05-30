@@ -14,17 +14,19 @@ This section contains worksheet PDFs and supporting assets for a set of Scratch 
 ### Cat and Mouse
 
 - Worksheet: [Cat and Mouse (PDF)](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Scratch/CatAndMouse/CatAndMouse.pdf)
+- Starter: [Cat and Mouse (starter)](https://scratch.mit.edu/projects/1267587027/editor/)
 - Assets and source files: [Cat and Mouse folder](https://github.com/jrmhaig/Code_Club_Resources/tree/master/Scratch/CatAndMouse)
 
 </div>
 
 <div class="scratch-project" markdown="1">
 
-![Cat and Mouse](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Scratch/DancingDino/dancing-dino-banner.png){: .scratch-project-banner }
+![Dancing Dino](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Scratch/DancingDino/dancing-dino-banner.png){: .scratch-project-banner }
 
 ### Dancing Dino
 
 - Worksheet: [Dancing Dino (PDF)](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Scratch/DancingDino/DancingDino.pdf)
+- Starter: [Dancing Dino (starter)](https://scratch.mit.edu/projects/1282230734/editor/)
 - Assets and source files: [DancingDino folder](https://github.com/jrmhaig/Code_Club_Resources/tree/master/Scratch/DancingDino)
 
 </div>
@@ -36,6 +38,7 @@ This section contains worksheet PDFs and supporting assets for a set of Scratch 
 ### Fireworks
 
 - Worksheet: [Fireworks (PDF)](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Scratch/Fireworks/Fireworks.pdf)
+- Starter: [Fireworks (starter)](https://scratch.mit.edu/projects/1282281293/editor/)
 - Assets and source files: [Fireworks folder](https://github.com/jrmhaig/Code_Club_Resources/tree/master/Scratch/Fireworks)
 
 </div>
@@ -47,6 +50,7 @@ This section contains worksheet PDFs and supporting assets for a set of Scratch 
 ### Lunar Lander
 
 - Worksheet: [Lunar Lander (PDF)](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Scratch/LunarLander/LunarLander.pdf)
+- Starter: [Lunar Lander (starter)](https://scratch.mit.edu/projects/1260772846/editor/)
 - Assets and source files: [Lunar Lander folder](https://github.com/jrmhaig/Code_Club_Resources/tree/master/Scratch/LunarLander)
 
 </div>
@@ -58,6 +62,7 @@ This section contains worksheet PDFs and supporting assets for a set of Scratch 
 ### Snowballs
 
 - Worksheet: [Snowballs (PDF)](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Scratch/Snowballs/Snowballs.pdf)
+- Starter: [Snowballs (starter)](https://scratch.mit.edu/projects/1242631052/editor/)
 - Assets and source files: [Snowballs folder](https://github.com/jrmhaig/Code_Club_Resources/tree/master/Scratch/Snowballs)
 
 </div>
@@ -69,6 +74,7 @@ This section contains worksheet PDFs and supporting assets for a set of Scratch 
 ### Bat and Ball
 
 - Worksheet: [Bat and Ball (PDF)](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Scratch/BatAndBall/BatAndBall.pdf)
+- Starter: [Bat and Ball (starter)](https://scratch.mit.edu/projects/1270455000/editor/)
 - Assets and source files: [Bat and Ball folder](https://github.com/jrmhaig/Code_Club_Resources/tree/master/Scratch/BatAndBall)
 
 </div>
