@@ -18,6 +18,10 @@ Worksheets and assets for a series of Scratch games suitable for Code Club sessi
 Here are links to other people's resources;
 
 * [Gravesend Code Club projects](https://ganzogo.github.io/gravesend-code-club/)
+* [Learn to Code with Code Club](https://codeclub.org/en/learn-to-code)
+* Code Club beta projects
+  * [Crafty critters](https://projects.raspberrypi.org/en/projects/crafty-critters)
+  * [Revolting rhymes](https://projects.raspberrypi.org/en/projects/editor-revolting-rhymes)
 
 ### Archive
 
