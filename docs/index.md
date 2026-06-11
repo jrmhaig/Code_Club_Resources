@@ -12,6 +12,7 @@ Welcome to my collection of resources created for running various [Code Clubs](h
 Worksheets and assets for a series of Scratch games suitable for Code Club sessions.
 
 - [Browse the Scratch projects]({{ '/scratch' | relative_url }})
+- [Browse the Python projects]({{ '/python' | relative_url }})
 
 ### Other resources
 

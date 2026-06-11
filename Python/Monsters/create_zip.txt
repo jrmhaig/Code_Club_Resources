@@ -1,0 +1,3 @@
+From the top level directory;
+
+zip -r Monsters.zip Monsters/monster.py Monsters/images
