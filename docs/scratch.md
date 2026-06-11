@@ -33,6 +33,18 @@ This section contains worksheet PDFs and supporting assets for a set of Scratch 
 
 <div class="scratch-project" markdown="1">
 
+![Fearless Frankie](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Scratch/FearlessFrankie/fearless-frankie-banner.png){: .scratch-project-banner }
+
+### Fearless Frankie
+
+- Worksheet: [Fearless Frankie (PDF)](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Scratch/FearlessFrankie/FearlessFrankie.pdf)
+- Starter: [Fearless Frankie (starter)](https://scratch.mit.edu/projects/1315644602/editor/)
+- Assets and source files: [Fearless Frankie folder](https://github.com/jrmhaig/Code_Club_Resources/tree/master/Scratch/FearlessFrankie)
+
+</div>
+
+<div class="scratch-project" markdown="1">
+
 ![Fireworks](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Scratch/Fireworks/fireworks-banner.png){: .scratch-project-banner }
 
 ### Fireworks
