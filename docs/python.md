@@ -18,3 +18,15 @@ This section contains worksheet PDFs and supporting assets for a set of Python p
 - Assets and source files: [Monsters folder](https://github.com/jrmhaig/Code_Club_Resources/tree/master/Python/Monsters)
 
 </div>
+
+<div class="scratch-project" markdown="1">
+
+![Sierpiński](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Python/Sierpinski/Sierpinski-banner-alt.png){: .scratch-project-banner }
+
+### Sierpiński
+
+- Worksheet: [Sierpinksi (PDF)](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Python/Sierpinski/Sierpinski.pdf)
+- Starter: Start with an empty Python file.
+- Assets and source files: [Sierpinski folder](https://github.com/jrmhaig/Code_Club_Resources/tree/master/Python/Sierpinski)
+
+</div>
