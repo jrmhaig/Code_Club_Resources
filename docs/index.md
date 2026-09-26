@@ -23,6 +23,7 @@ Here are links to other people's resources;
 * Code Club beta projects
   * [Crafty critters](https://projects.raspberrypi.org/en/projects/crafty-critters)
   * [Revolting rhymes](https://projects.raspberrypi.org/en/projects/editor-revolting-rhymes)
+* [Code Club Arcade](https://the-cc.io/code-club-arcade)
 
 ### Archive
 
