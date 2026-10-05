@@ -90,3 +90,27 @@ This section contains worksheet PDFs and supporting assets for a set of Scratch 
 - Assets and source files: [Bat and Ball folder](https://github.com/jrmhaig/Code_Club_Resources/tree/master/Scratch/BatAndBall)
 
 </div>
+
+<div class="scratch-project" markdown="1">
+
+![Asteroids](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Scratch/Asteroids/asteroids-banner.png){: .scratch-project-banner }
+
+### Asteroids
+
+- Worksheet: [Asteroids (PDF)](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Scratch/Asteroids/Asteroids.pdf)
+- Starter: [Asteroids (starter)](https://scratch.mit.edu/projects/1309089534/editor)
+- Assets and source files: [Asteroids folder](https://github.com/jrmhaig/Code_Club_Resources/tree/master/Scratch/Asteroids)
+
+</div>
+
+![Magic House](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Scratch/MagicHouse/MagicHouse-banner.png){: .scratch-project-banner }
+
+<div class="scratch-project" markdown="1">
+
+### Magic House
+
+- Worksheet: [Magic House (PDF)](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Scratch/MagicHouse/MagicHouse.pdf)
+- Starter: [Magic House (starter)](https://scratch.mit.edu/projects/1288181085/editor)
+- Assets and source files: [Magic House folder](https://github.com/jrmhaig/Code_Club_Resources/tree/master/Scratch/MagicHouse)
+
+</div>
