@@ -25,8 +25,20 @@ This section contains worksheet PDFs and supporting assets for a set of Python p
 
 ### Sierpiński
 
-- Worksheet: [Sierpinksi (PDF)](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Python/Sierpinski/Sierpinski.pdf)
+- Worksheet: [Sierpinski (PDF)](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Python/Sierpinski/Sierpinski.pdf)
 - Starter: Start with an empty Python file.
 - Assets and source files: [Sierpinski folder](https://github.com/jrmhaig/Code_Club_Resources/tree/master/Python/Sierpinski)
+
+</div>
+
+![Sierpiński](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Python/StarshipTakeoff/StarshipTakeoff-banner.png){: .scratch-project-banner }
+
+<div class="scratch-project" markdown="1">
+
+### Starship Takeoff
+
+- Worksheet: [Starship Takeoff (PDF)](https://github.com/jrmhaig/Code_Club_Resources/raw/master/Python/StarshipTakeoff/StarshipTakeoff.pdf)
+- Starter: Start with an empty Python file.
+- Assets and source files: [Starship Takeoff folder](https://github.com/jrmhaig/Code_Club_Resources/tree/master/Python/StarshipTakeoff)
 
 </div>
